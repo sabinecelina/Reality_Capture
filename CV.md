@@ -11,7 +11,6 @@ subtitle: Sabine Schleise
 - Research and development in reality capture and future technologies
 - Expertise in neural radiance fields and computer vision
 - Implementation of innovative technologies for digital processing of real environments
-- Proficient in LaTeX, mathematics, and physics tutoring
 
 ### AWARDS
 
