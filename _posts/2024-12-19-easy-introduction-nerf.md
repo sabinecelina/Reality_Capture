@@ -4,6 +4,12 @@ title:  "An easy introduction to Neural Radiance Fields"
 date:   2024-12-19 21:21:21 +0530
 categories: ["general"]
 ---
+
+*"We live in a three dimensional world. Our perception and memories are
+of three dimensional beings. Yet there is no way to capture and revisit
+those moments like you are there. All we have to show for it are these 2D
+slices we call photos. It’s time for that to change" (Yu and Jain, 2023)."*
+
 I'd like to begin by introducing the idea of capturing reality in its three-dimensionality.​
 
 What if we could capture reality in all its breathtaking complexity? The interplay of light, material properties, depth information, intricacies of a three-dimensional (3D) scene that are often get lost in two-dimensional (2D) images. Now, imagine taking it a step further, not just capturing this scene in its three-dimensional glory, but also immersing ourselves in it through virtual reality. To step into that scene, to feel that we are truly a part of it.​
