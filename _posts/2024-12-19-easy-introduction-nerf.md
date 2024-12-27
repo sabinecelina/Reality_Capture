@@ -49,43 +49,50 @@ NeRFs operate on light fields that directly capture shapes, textures, and materi
 ### TODO Placeholder image
 <img src="{{ '/assets/2024-12-19/blender.png' | prepend: site.baseurl }}" alt="Blender Examples">
 
+So, we’ve explored how a NeRF can take a bunch of 2D images and reconstruct them into a rich, 3D representation using a learned “light field.” But how do we actually render this newly formed 3D world so that it looks photorealistic on your screen?
+
+In traditional computer graphics we often rely on ray tracing to simulate how light bounces around a scene, creating realistic reflections, shadows, and global illumination. NeRF’s approach shares a fundamental similarity: it also “traces” rays into a scene, except instead of hitting solid polygons or explicit geometry, those rays traverse a **continuous volumetric representation**.
+
+While ray tracing is all about calculating precise light interactions on defined surfaces, NeRF uses ray marching to accumulate color and density directly from the learned radiance field. This means NeRF doesn’t need to store detailed models of every object in a scene; it relies on the neural network to decide how light would behave at each point in space. By looking at the parallels - both methods track rays through 3D space, but do so in fundamentally different ways - we can appreciate how NeRF builds on and complements classic ray tracing techniques to deliver next-level realism.
+
 ## Rendering in NeRF: From Data to Image
 
-1. Ray Marching: Casting Rays Through the Scene
-Imagine you’re looking through a virtual camera at your scene. For each pixel in your final image, a “ray” is sent from the camera into the 3D space. This process is called ray marching.
-- Discrete Sampling: Along the ray’s path, the system takes many samples (points). At each sample, the NeRF predicts how much density and color exist at that location for the given viewing direction.
+### Ray Marching: Casting Rays Through the Scene
 
-2. The Network Predicts Density and Color
-NeRF itself is a trained neural network. For every point x in space and every viewing direction d, it predicts:
+Imagine you’re peering through a virtual camera at your scene. For **each pixel** in your final image, a “ray” is projected into the 3D space. This step is called **ray marching**.
 
-Density (σ) How “opaque” or “transparent” the material is at that point.
+- **Discrete Sampling**: Along the ray’s path, the system samples many points. At each sample, the NeRF predicts how much **density** and **color** exist at that location for a given viewing direction.
 
-Radiance/Color (c) The color or light emission from that point in the direction of the camera, capturing effects like reflection or highlights.
+### The Network Predicts Density and Color
 
-Again: Why two outputs?
+NeRF is the neural network that handles these predictions. For every point \(\mathbf{x}\) in space and every viewing direction \(\mathbf{d}\), it determines:
 
-Density determines how light is absorbed or transmitted at a location.
+- **Density (\(\sigma\))**  
+  How “opaque” or “transparent” that point is.
+- **Radiance/Color (\(c\))**  
+  The emitted color at that point in the direction of the camera (which can include reflections or highlights).
 
-Color can change depending on viewing angles and lighting, enabling realistic reflections or glossiness.
+The magic here is that **density** doesn’t depend on where you’re looking from, while **color** does, enabling realistic view-dependent effects.
 
-3. Accumulating Along the Ray
-As the ray moves through the scene, the renderer collects (accumulates) density and color information at each sample point, effectively creating a volumetric representation of the scene. The final pixel color is determined by:
+### Accumulating Along the Ray
 
-- Opacity vs. Transparency
--- High density means the material blocks light, so you mostly see that point’s color.
--- Low density means you might see color from deeper points along the ray.
+As each ray travels through the scene, we combine (or accumulate) density and color from all sample points, building up a **volumetric** representation. Points with higher density block more light, so their color contribution dominates. Points with lower density let light pass through, revealing samples that lie farther along the ray.
 
-- Weighted Color Blending
--- Each sampled point contributes to the final color, weighted by its density and distance. It’s similar to light scattering through fog: points that are closer and denser overshadow those behind them.
+### Merging All Pixels
 
-4. Merging All Pixels
-This process repeats for every pixel in your image. The result is a synthetic view—the scene as if photographed from that exact camera angle.
+This sampling and accumulation process is repeated for every pixel in your virtual camera’s view. The end result? A **synthetic image** of the scene, just as if you had positioned a physical camera at that viewpoint.
 
-Ray Marching is Computationally Intensive: A large number of samples per ray are needed to capture fine details like reflections or intricate textures.
+### The (Computational) Problem
 
-Acceleration Strategies: Modern NeRF methods (e.g., instant-ngp) prioritize regions of interest and skip unnecessary samples, making rendering much faster.
+- **Ray Marching is Intensive**: A large number of samples per ray is needed for fine details like reflections or tiny objects.  
+- **Acceleration Strategies**: Newer NeRF methods—like **instant-ngp**—prioritize important regions of the scene or skip unnecessary samples, massively speeding up both training and rendering.
+
+---
 
 ## Takeaways
-Neural Radiance Fields fundamentally changed how we think about reconstructing 3D scenes from 2D images. In just a few short years, we’ve seen dramatic advances that make training faster, rendering smoother, and handling huge environments easier [Awewome NeRFs](https://github.com/awesome-NeRF/awesome-NeRF).
 
-If you’re intrigued by the potential of seamlessly creating 3D worlds from simple photos, now is a great time to dive in. Tools like instant-ngp and others let you train a NeRF in minutes rather than days, and ongoing research continues to refine and expand what’s possible. Ultimately, NeRFs promise to make the creation of immersive, photorealistic 3D experiences more accessible than ever.
+Neural Radiance Fields fundamentally changed how we reconstruct 3D worlds from basic 2D images. Over just a few years, training has become faster, rendering more efficient, and the ability to handle large or complex environments has dramatically improved. If you’re captivated by the idea of turning ordinary photos into immersive 3D experiences, **now** is a fantastic time to explore. Tools like **instant-ngp** can train a NeRF in minutes (rather than days), and ongoing research continues to push the boundaries of what’s possible. Ultimately, NeRFs promise to make immersive, photorealistic 3D experiences accessible to anyone with a camera.
+
+For a comprehensive list of NeRF frameworks and resources, check out [Awesome NeRFs](https://github.com/awesome-NeRF/awesome-NeRF).
+
+Happy exploring!
