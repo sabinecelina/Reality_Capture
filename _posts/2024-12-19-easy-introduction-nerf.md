@@ -19,7 +19,7 @@ For example, the following video impressively illustrates how **NeRFs** are able
 
 *The key idea of NeRF is to synthesize novel views of complex scenes by optimizing an underlying continuous volumetric scene function using a sparse set of input images.*
 
-First, we start with a dataset of images paired with corresponding camera positions, so we need to know from which position the image was taken. First, we start with a dataset of images paired with corresponding camera positions, so we need to know from which position the image was taken. This is typically done using a process called **Structure-from-Motion (SfM)**, and a popular tool for this is [COLMAP]({{ '/2024-12-20-colmap/' | prepend: site.baseurl }}).
+First, we start with a dataset of images paired with corresponding camera positions, so we need to know from which position the image was taken. First, we start with a dataset of images paired with corresponding camera positions, so we need to know from which position the image was taken. This is typically done using a process called **Structure-from-Motion (SfM)**, and a popular tool for this is [COLMAP]({{ '/2024-12-27-colmap-sfm' | prepend: site.baseurl }}).
 We then train a neural network to optimize the representation of the radiance field. Once this training is complete, we can query the neural radiance field to visualize what the scene would look like from a particular position, viewed from a certain angle, and then render new images or videos that were not previously captured in our input images.
 
 <img src="{{ '/assets/2024-12-19/input_output_nerfs.png' | prepend: site.baseurl }}" alt="Training NeRFs">
