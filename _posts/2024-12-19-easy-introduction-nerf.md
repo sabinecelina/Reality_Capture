@@ -37,7 +37,9 @@ In general, the NeRF algorithm is a technique that generates 3D representations 
 Nevertheless, let’s take a closer look at an important aspect of NeRFs: how they encode and render scene properties. The network outputs two components for each point in space:
 
 *Density*: This represents how much light is absorbed or scattered at a given point. It is inherently view-independent, meaning it does not change regardless of the observer’s perspective. For example, the density of a water surface remains constant across all angles.
+
 *Color*: In contrast, the color is view-dependent, as it is influenced by the angle of the light and the observer. This dependency allows NeRFs to capture dynamic effects like reflections or highlights that change as the viewpoint shifts.
+
 This distinction between density and color is what enables NeRFs to recreate realistic effects such as the shimmering reflections on water or the gloss on a polished surface. You can see this interplay vividly in the next figure.
 
 <img src="{{ '/assets/2024-12-19/radiance_field.png' | prepend: site.baseurl }}" alt="Neural Radiance Field GIF 2">
