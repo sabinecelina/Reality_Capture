@@ -187,7 +187,14 @@
       text-align: justify;
       margin: 0 auto;
       width: 100%; }
+  .scaniverse {
+    display: block;
+    margin: 0 auto;
 
+  }
+  .content-center {
+    justify-content: center;
+  }
 /* =Small screen *//*************************************************************/
   @media (max-width: 500px) {
     p, ul, ol, dl {
