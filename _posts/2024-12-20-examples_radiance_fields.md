@@ -4,6 +4,9 @@ title:  "The Cutting-Edge World of 3D Representations: Tools, Techniques, and Mo
 date:   2024-12-20 16:21:00 +0530
 categories: ["general"]
 ---
+
+# WORK IN PROGRESS
+
 Photogrammetry and tools like Metashape are well-known and have been around for quite some time. But since the groundbreaking Neural Radiance Fields (NeRFs) paper in 2021, the game has changed. Suddenly, there were new methods to capture 3D scenes with unprecedented realism. The challenge? For a long time, these techniques were so cutting-edge that only developers could experiment with them – no user-friendly tools in sight.
 
 Fast forward to today, and the landscape looks very different. A variety of tools have emerged, making it easier than ever for non-developers to dive into the world of 3D representations like NeRFs and Gaussian Splattings. In this blog post, I’ll take a closer look at these tools, evaluate their strengths and weaknesses, and show how they’re pushing 3D representation to new heights. This blog aims to answer the question: What’s possible with Gaussian Splattings as of today? Let’s find out!
@@ -29,5 +32,3 @@ A highlight of KIRI Engine is its new masking functionality, which automatically
   <img width="30%" src="{{ '/assets/2024-12-20/KIRI_engine.jpeg' | prepend: site.baseurl }}" alt="KIRI Engine">
   <img width="30%" src="{{ '/assets/2024-12-20/KIRI_engine_blur.jpeg' | prepend: site.baseurl }}" alt="KIRI Engine">
 </div>
-
-# TODO untersuchen, ob es an dem Hintergrund entfernen Feature liegt. 

@@ -454,3 +454,58 @@
   /* Custom */
   .go-home {
     text-align: center; }
+
+/* Warning card styles */
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+    /* General button styles */
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase; /* Make text uppercase */
+}
+
+/* Pink button styles */
+.btn-pink {
+  background-color: deeppink; /* Updated color to deeppink */
+  color: white; /* Updated text color to white */
+  border: none;
+}
+
+/* Hover effect for pink buttons */
+.btn-pink:hover {
+  background-color: #c71585; /* Slightly darker pink for hover */
+  color: white;
+}
+
+/* Flex container for buttons */
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Center buttons */
+  flex-wrap: wrap; /* Ensures buttons wrap on smaller screens */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  .buttons {
+    justify-content: center; /* Center buttons on smaller screens */
+  }
+}
