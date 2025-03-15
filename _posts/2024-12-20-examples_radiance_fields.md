@@ -7,22 +7,34 @@ categories: ["general"]
 
 # WORK IN PROGRESS
 
-The challenge of reconstructing three-dimensional structures from two-dimensional images has long been a complex problem in computer vision. Structure-from-Motion (SfM) provided an early pipeline to tackle this challenge, enabling 3D scene reconstruction from image sequences. However, the field underwent a paradigm shift in 2020 with the introduction of Neural Radiance Fields (NeRFs). This groundbreaking technique revolutionized 3D capture, offering an unprecedented level of realism by encoding volumetric radiance fields within neural networks.
+Heard about Gaussian Splatting? It’s everywhere, right? You look it up, get a rough idea, but have no clue where to start. Every tutorial tells you to install Nerfstudio or some other mysterious tool - just to create a single splat. Frustrating? I got you. Let’s explore the Gaussian Splatting ecosystem together, figure out what works easily, and get you started without the hassle.
 
-NeRFs rapidly gained popularity, excelling in photorealistic rendering, particularly in scenarios with complex lighting and reflective surfaces. Following the explosion of NeRFs, a new method emerged in 2023: Gaussian Splatting. Unlike NeRFs, which rely on deep neural networks, Gaussian Splatting represents 3D scenes using point-based rendering with Gaussian primitives. This approach significantly reduces computational demands, allowing for faster training and rendering while maintaining high-quality visual fidelity.
+If you’re reading this, you probably already have some clue, but let’s make sure we’re on the same page. Instead of using points or meshes, a scene is represented as thousands of 3D Gaussians. Each Gaussian has a position, orientation, scale, color, and transparency. They get blended naturally in rendering, avoiding gaps and noisy artifacts. Unlike NeRFs, which store scene information implicitly inside a neural network (meaning you need a model to "decode" the scene every time you want to render it), Gaussians are explicit.
 
-For years, these cutting-edge techniques were accessible only to developers, as user-friendly tools were nearly nonexistent. Fast forward to today, and the landscape has changed dramatically. A variety of accessible tools have emerged, empowering beginners to explore 3D representations like Gaussian Splatting with ease. Each of these tools caters to different needs, from quick mobile captures to high-end processing on powerful GPUs. The growing accessibility of these applications marks a turning point for 3D scene representation. What once required extensive computational resources and technical expertise is now within reach for hobbyists, artists, and professionals alike. Let’s take a look at some of the most prominent options available.
+This means:
+- No black-box neural networks needed at inference time
+- Faster rendering because there’s no complex function evaluation
+- Direct manipulation – want to tweak the splats? Just edit them like pixels
 
-## Scaniverse - Free 3D Scanner - Gaussian Splatting for iOS
+In short: Gaussians give you full control over the data, while NeRFs are more like magic boxes that you have to ask nicely to show you an image.
 
-When it comes to capturing the world in 3D, Scaniverse stands out as a game-changer. This app doesn’t just create 3D models with your iPhone or iPad – it takes things a step further. Using cutting-edge Gaussian Splattings, Scaniverse can process a high-quality 3D scene directly on an iPad in just two minutes. And the best part? It doesn’t rely on cloud processing – everything happens locally, keeping your data private and the workflow fast.
+So, let’s explore the tool landscape of Gaussian Splatting together. 
 
-<video class="scaniverse" width="80%" controls autoplay loop>
-  <source src="{{ '/assets/2024-12-20/scaniverse_canon.mp4' | prepend: site.baseurl }}" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+## Scaniverse - Gaussian Splatting for your Phone
+If you want to create a Gaussian Splat without dealing with complex GitHub repositories or command-line setups, Scaniverse is an excellent choice. It lets you generate high-quality splats directly on your phone in just a few minutes.
 
-But the magic doesn’t stop there. Scaniverse allows you to export your models as PLY files, opening the door to advanced editing in tools like Blender or other 3D software. This makes it not only an excellent scanning app but also a versatile tool for creators looking to take their projects to the next level.
+*Why Scaniverse?*
+- Simple and fast – Download the app, scan an object or scene, and generate a Gaussian Splat in no time.
+- Works on Android and iOS – No need for a high-end PC or specialized hardware.
+- No cloud processing – Everything happens locally on your device, meaning:
+  - No long waiting times for cloud servers
+  - Full control over your data and privacy
+
+<video class="scaniverse" width="80%" controls autoplay loop muted> <source src="{{ '/assets/2024-12-20/scaniverse_canon.mp4' | prepend: site.baseurl }}" type="video/mp4"> Your browser does not support the video tag. </video> <div style="display: flex; justify-content: center; margin: 20px 0;"> <a style="justify-content: center;" href="https://scaniverse.com/scan/jc6wzmsom6tlplx6">Watch the example here</a> </div>
+
+Scaniverse does more than just quick scans. It allows you to export models as PLY files, making it easy to refine and enhance them in Blender, Unity, or other 3D software. Whether you are a hobbyist or a professional, this feature opens the door to more advanced editing and creative possibilities.
+
+If you're looking for a quick and accessible way to experiment with Gaussian Splatting, Scaniverse is a great place to start.
 
 ## KIRI Engine: 3D Scanner App for iPhone, Android and Web
 
