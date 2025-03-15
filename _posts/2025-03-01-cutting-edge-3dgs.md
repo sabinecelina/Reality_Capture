@@ -24,9 +24,7 @@ Unlike NeRFs, which encode all scene information inside a neural network (so you
 
 Simply put: Gaussians give you freedom, while NeRFs are like magic boxes that you have to politely ask for results.
 
-So, let’s explore the tool landscape of Gaussian Splatting together. 
-
-### **Brief overview of the tools**  
+### **Which Tool Should You Use? - A brief overview**  
 
 - **For the fastest, easiest experience** → **Scaniverse** (local processing, quick results)  
 - **For advanced cloud-based reconstruction** → **Luma AI** (high-quality outputs)  
@@ -35,6 +33,10 @@ So, let’s explore the tool landscape of Gaussian Splatting together.
 - **For browser-based Gaussian Splatting** → **Polycam** (web app, easy entry point)  
 
 If you want a **quick and free** way to experiment, **Scaniverse or Polycam Web** are great starting points. For those needing **higher-quality outputs** with additional control, **Luma AI or KIRI Engine** are strong choices. If **local processing is a must**, then **Postshot** is the best solution—especially for users with an RTX GPU.  
+
+# Let’s Dive In – A Closer Look at Each Tool
+
+Now that you have a bird’s-eye view, let’s break it down: how each tool works, what it’s best for, and how you can start using it today.
 
 ## Scaniverse – The Easiest Way to Splat (iOS & Android)
 
