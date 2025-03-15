@@ -23,7 +23,7 @@ subtitle: Sabine Schleise
 
 ### EXPERIENCE
 
-**Research Engineer** - SICK AG, Waldkirch <span style="float: right;">Since 11/2023</span>  
+**Research Engineer Reality Capture** - SICK AG, Waldkirch <span style="float: right;">Since 11/2023</span>  
 - Conducting research and implementing advanced technologies for reality capture.
 - Developing precise methods to digitally process real-world environments.  
 
@@ -34,11 +34,11 @@ subtitle: Sabine Schleise
 ### EDUCATION
 
 Hochschule Furtwangen <span style="float: right;">03/2022 - 10/2023</span>  
-**Master's in Media Informatics** - GPA: 1.3  
+**Master's in Media Computer Science** - GPA: 1.3  
 [Thesis: Neural Radiance Fields in the Context of the Industrial Metaverse](https://sabinecelina.github.io/masterthesis-nerf_mv/)
 
 Hochschule Furtwangen <span style="float: right;">03/2018 - 02/2022</span>  
-**Bachelor's in Media Informatics** - GPA: 1.6  
+**Bachelor's in Media Computer Science** - GPA: 1.6  
 Thesis: Implementation of an Application for Camera Calibration  
 
 Karlsruher Institut für Technologie <span style="float: right;">10/2016 - 10/2017</span>  

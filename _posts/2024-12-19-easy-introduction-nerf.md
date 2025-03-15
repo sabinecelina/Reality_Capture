@@ -23,7 +23,7 @@ For example, the following video impressively illustrates how **NeRFs** are able
 
 *The key idea of NeRF is to synthesize novel views of complex scenes by optimizing an underlying continuous volumetric scene function using a sparse set of input images.*
 
-First, we start with a dataset of images paired with corresponding camera positions, so we need to know from which position the image was taken. First, we start with a dataset of images paired with corresponding camera positions, so we need to know from which position the image was taken. This is typically done using a process called **Structure-from-Motion (SfM)**, and a popular tool for this is [COLMAP]({{ '/2024-12-27-colmap-sfm' | prepend: site.baseurl }}).
+First, we start with a dataset of images paired with corresponding camera positions, so we need to know from which position the image was taken. First, we start with a dataset of images paired with corresponding camera positions, so we need to know from which position the image was taken. This is typically done using a process called **Structure-from-Motion (SfM)**, and a popular tool for this is [COLMAP](https://colmap.github.io).
 We then train a neural network to optimize the representation of the radiance field. Once this training is complete, we can query the neural radiance field to visualize what the scene would look like from a particular position, viewed from a certain angle, and then render new images or videos that were not previously captured in our input images.
 
 <img src="{{ '/assets/2024-12-19/input_output_nerfs.png' | prepend: site.baseurl }}" alt="Training NeRFs">
@@ -44,7 +44,6 @@ This distinction between density and color is what enables NeRFs to recreate rea
 
 NeRFs operate on light fields that directly capture shapes, textures, and material effects. This allows them to recreate scenes with an unprecedented level of realism. Imagine capturing the shimmering effect of sunlight on water or the intricate reflection on a polished metal surface. NeRFs achieve this by encoding every scene detail into a neural network, enabling the synthesis of photorealistic views from any angle. In contrast, other 3D processing techniques (like Blender) typically start with shapes and then apply textures and material effects as secondary processes. 
 
-### TODO Placeholder image
 <img src="{{ '/assets/2024-12-19/blender.png' | prepend: site.baseurl }}" alt="Blender Examples">
 
 So, we’ve explored how a NeRF can take a bunch of 2D images and reconstruct them into a rich, 3D representation using a learned “light field.” But how do we actually render this newly formed 3D world so that it looks photorealistic on your screen?
