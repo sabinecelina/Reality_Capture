@@ -49,7 +49,7 @@ With its cloud-based approach and broad export support, Luma AI is a great choic
 
 ## KIRI Engine – 3D Gaussian Splatting with Advanced Mesh Conversion
 
-KIRI Engine offers 3DGS along with a **Mesh 2.0 pipeline**, improving the conversion of Gaussian splats into detailed meshes. This update enhances handling of reflective and transparent materials using advanced normal prediction and reflection removal techniques.  
+The KIRI Engine app offers 3DGS along with a **Mesh 2.0 pipeline**, improving the conversion of Gaussian splats into detailed meshes. This update enhances handling of reflective and transparent materials using advanced normal prediction and reflection removal techniques.  
 
 ### Key Features
 - Export options: Supports **OBJ, PLY, GLTF** for meshes and `.ply` for Gaussian Splats.  
@@ -57,9 +57,9 @@ KIRI Engine offers 3DGS along with a **Mesh 2.0 pipeline**, improving the conver
 - Adjustable lighting and contrast: Allows fine-tuning of scans for better results.  
 
 ### Key points
-- **High mesh quality**
-- **Cloud-based processing** 
-- **Subscription model** – Pro version required (€90/year) to unlock scanning capabilities.  
+- High mesh quality
+- Cloud-based processing
+- Subscription model - €90/year to unlock 3DGS
 
 KIRI Engine is a powerful tool for users who need high-quality meshes from Gaussian Splats, but its reliance on cloud computing and paid access model make it less accessible compared to free alternatives like Scaniverse.
 
@@ -81,3 +81,39 @@ Key Features
 - Camera position export/import – Maintain precise framing for seamless integration into other workflows.
 
 Postshot is ideal for users with an Nvidia RTX GPU who want to process 3D representations without relying on cloud-based services. Simply capture a scene with your phone and load it into Postshot to start experimenting.
+
+## Polycam – 3D Scanning and Gaussian Splatting via Web and Mobile
+
+Polycam is a versatile 3D scanning tool that offers multiple ways to generate Gaussian Splattings through a web-based platform. Just upload images on the webpage for cloud-based Gaussian Splatting generation. However, exporting scans in multiple formats requires a professional subscription.
+
+Polycam is a great choice if:  
+- You prefer a web-based solution and want to **generate a Gaussian Splat without installing additional software**.  
+- You need up to 200 images to create a high-quality Splat with minimal effort.  
+- You require measurement tools for accurate dimensions within your 3D scans.  
+- You want editing options like cropping, scaling, and adjustments before export.  
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img width="90%" src="{{ '/assets/2024-12-20/polycam.png' | prepend: site.baseurl }}" alt="KIRI Engine">
+</div>
+<div style="display: flex; justify-content: center; margin: 20px 0;"> 
+<a style="justify-content: center;" href="https://poly.cam/capture/15725918-56a8-4010-b522-f97b9db69a69">Watch the example here</a> </div>
+
+## **Conclusion – Which Gaussian Splatting Tool is Right for You?**  
+
+Gaussian Splatting has opened up new possibilities for **fast, high-quality 3D scene reconstruction**, and there are now several tools available, each catering to different needs. Whether you prioritize **ease of use, processing speed, or export flexibility**, there’s an option for you.  
+
+### **Choosing the Right Tool**  
+
+- **For the fastest, easiest experience** → **Scaniverse** (local processing, quick results)  
+- **For advanced cloud-based reconstruction** → **Luma AI** (NeRF origins, high-quality outputs)  
+- **For professional mesh conversion** → **KIRI Engine** (detailed outputs, but requires a subscription)  
+- **For full local control and real-time training** → **Postshot** (best for users with an Nvidia GPU)  
+- **For browser-based Gaussian Splatting** → **Polycam** (web app, easy entry point)  
+
+If you want a **quick and free** way to experiment, **Scaniverse or Polycam Web** are great starting points. For those needing **higher-quality outputs** with additional control, **Luma AI or KIRI Engine** are strong choices. If **local processing is a must**, then **Postshot** is the best solution—especially for users with an RTX GPU.  
+
+### **The Future of Gaussian Splatting**  
+
+With more tools adopting **Gaussian Splatting over traditional NeRFs**, it’s clear that this method is gaining traction for **real-time rendering and interactive 3D applications**. As the technology continues to evolve, we can expect even more **efficient workflows, better integrations, and improved accessibility** across devices and platforms.  
+
+No matter which tool you choose, **Gaussian Splatting is making 3D scanning more powerful and flexible than ever before.** Now it’s your turn—pick a tool, start experimenting, and see what you can create!
