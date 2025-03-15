@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "The Cutting-Edge World of 3D Representations"
-date:   2024-12-20 16:21:00 +0530
+date:   2025-03-01 16:21:00 +0530
 categories: ["general"]
 ---
 
@@ -92,11 +92,11 @@ Polycam is a great choice if:
 - You require measurement tools for accurate dimensions within your 3D scans.  
 - You want editing options like cropping, scaling, and adjustments before export.  
 
+<div style="display: flex; justify-content: center; margin: 20px 0;"> 
+<a style="justify-content: center;" href="https://poly.cam/capture/15725918-56a8-4010-b522-f97b9db69a69">Watch the example here</a> </div>
 <div style="display: flex; justify-content: center; gap: 10px;">
   <img width="90%" src="{{ '/assets/2024-12-20/polycam.png' | prepend: site.baseurl }}" alt="KIRI Engine">
 </div>
-<div style="display: flex; justify-content: center; margin: 20px 0;"> 
-<a style="justify-content: center;" href="https://poly.cam/capture/15725918-56a8-4010-b522-f97b9db69a69">Watch the example here</a> </div>
 
 ## **Conclusion – Which Gaussian Splatting Tool is Right for You?**  
 
