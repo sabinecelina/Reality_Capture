@@ -7,38 +7,25 @@ categories: ["general"]
 
 Ever heard of Gaussian Splatting but don’t know where to start? You’re not alone.
 
-The 3D world is full of different ways to represent scenes - Photogrammetry, NeRFs, and now Gaussian Splatting - and it’s easy to get lost in the technical jargon. The biggest question is: which one should you use?
+A key reason why Gaussian Splatting is making waves? Performance. Unlike traditional 3D meshes or AI-based NeRFs, Gaussian Splats can render over 1 million points in real-time—even on mobile devices. That’s blazing fast compared to other methods that require expensive rendering pipelines or AI inference. But it’s not just speed. **Gaussian Splatting** is also better for capturing real-world materials that traditional geometry struggles with.
+- Handles “fuzzy” objects – Hair, fur, smoke, clouds, grass? Gaussian Splats blend these naturally.
+- No strict surface definition – Unlike meshes, which define hard boundaries, Gaussians allow soft, organic transitions.
+- Perfect for real-time applications – Works in games, VR, AR, and interactive 3D without the heavy computational load of NeRFs.
 
-Here’s a quick breakdown:
-
+So, is it better than Photogrammetry or NeRFs? Well… that depends! Let’s break it down.
 - Photogrammetry (OBJ + texture) → Uses traditional 3D meshes but struggles with soft, fuzzy, or transparent objects.
 - NeRFs (neural networks) → AI-powered 3D reconstructions with realistic lighting but require a trained model to render scenes.
 - Gaussian Splatting (PLY + colors) → Represents 3D scenes with thousands of tiny Gaussians, handling complex materials like hair, clouds, and grass better than meshes.
 
-What’s interesting? No matter which method you choose, they all begin with the same process: Structure from Motion (SfM). 📌 SfM is the foundation of modern 3D reconstruction:
+What’s interesting? No matter which method you choose, they all begin with the same process: Structure from Motion (SfM). SfM is the foundation of modern 3D reconstruction:
 
 - Photogrammetry → Converts sparse point clouds into dense meshes (RealityCapture, Agisoft Metashape).
 - NeRFs → Uses the camera parameters to train a neural network (Instant-NGP).
 - Gaussian Splatting → Uses the sparse cloud as the base for optimizing Gaussian splats (Postshot, Luma AI, Scaniverse).
 
-Tools like Colmap and RealityCapture are often used to handle this SfM preprocessing, feeding the results into NeRF pipelines, Gaussian Splatting optimizers, or photogrammetry software. So in short: No matter which method you pick, it all starts with SfM-based camera pose estimation and point cloud generation.
+Tools like Colmap and RealityCapture are commonly used in all these workflows because they extract the camera intrinsics & extrinsics - a crucial step for both NeRFs and Gaussian Splatting.
 
 Good news: You don’t need to be a researcher or an engineer to get started. This guide breaks it down step by step, giving you the best tools to jump in without drowning in technical jargon or endless installations. Let’s get you creating awesome 3D models—fast and frustration-free.
-
-## What’s the Big Deal with Gaussian Splatting?
-
-If you’re here, you probably have a rough idea, but let’s make sure we’re on the same page. Instead of using points or meshes, Gaussian Splatting represents a scene as thousands of 3D Gaussians. Each one has:
-
-- A position, orientation, and scale
-- Color and transparency
-- A smooth way of blending into the final render
-
-Unlike NeRFs, which encode all scene information inside a neural network (so you need a model to "decode" it every time you render), Gaussians are explicit—meaning:
-- No waiting for a neural net to process every frame
-- Faster rendering with direct edits (tweak splats like pixels!)
-- More control over the final output
-
-Simply put: Gaussians give you freedom, while NeRFs are like magic boxes that you have to politely ask for results.
 
 ### **Which Tool Should You Use? - A brief overview**  
 
