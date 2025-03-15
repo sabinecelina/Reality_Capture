@@ -5,7 +5,23 @@ date:   2025-03-01 16:21:00 +0530
 categories: ["general"]
 ---
 
-You’ve seen the hype. Gaussian Splatting is popping up everywhere - people are making insane 3D representations, and you’re just sitting there, wondering how to even begin. Every guide assumes you already know what you’re doing, or worse, it tells you to install a dozen tools before you can even see a result. Frustrating, right?
+Ever heard of Gaussian Splatting but don’t know where to start? You’re not alone.
+
+The 3D world is full of different ways to represent scenes - Photogrammetry, NeRFs, and now Gaussian Splatting - and it’s easy to get lost in the technical jargon. The biggest question is: which one should you use?
+
+Here’s a quick breakdown:
+
+- Photogrammetry (OBJ + texture) → Uses traditional 3D meshes but struggles with soft, fuzzy, or transparent objects.
+- NeRFs (neural networks) → AI-powered 3D reconstructions with realistic lighting but require a trained model to render scenes.
+- Gaussian Splatting (PLY + colors) → Represents 3D scenes with thousands of tiny Gaussians, handling complex materials like hair, clouds, and grass better than meshes.
+
+What’s interesting? No matter which method you choose, they all begin with the same process: Structure from Motion (SfM). 📌 SfM is the foundation of modern 3D reconstruction:
+
+- Photogrammetry → Converts sparse point clouds into dense meshes (RealityCapture, Agisoft Metashape).
+- NeRFs → Uses the camera parameters to train a neural network (Instant-NGP).
+- Gaussian Splatting → Uses the sparse cloud as the base for optimizing Gaussian splats (Postshot, Luma AI, Scaniverse).
+
+Tools like Colmap and RealityCapture are often used to handle this SfM preprocessing, feeding the results into NeRF pipelines, Gaussian Splatting optimizers, or photogrammetry software. So in short: No matter which method you pick, it all starts with SfM-based camera pose estimation and point cloud generation.
 
 Good news: You don’t need to be a researcher or an engineer to get started. This guide breaks it down step by step, giving you the best tools to jump in without drowning in technical jargon or endless installations. Let’s get you creating awesome 3D models—fast and frustration-free.
 
@@ -119,6 +135,16 @@ Polycam is a versatile 3D scanning tool that offers multiple ways to generate Ga
   <img width="90%" src="{{ '/assets/2024-12-20/polycam.png' | prepend: site.baseurl }}" alt="KIRI Engine">
 </div>
 <div style="display: flex; justify-content: center; margin: 5px 0;"><i>Screenshot from PolyCam</i></div>
+
+## BONUS: Supersplat – A Powerful Gaussian Editor
+If you want to edit Gaussian Splats, check out Supersplat!
+**What Can Supersplat Do?**
+- Delete, transform, and adjust splats
+- Select points by histogram (for precise editing)
+- Color correction & compression
+- Export to a web player for easy sharing
+
+This makes Supersplat an invaluable tool for refining and optimizing Gaussian Splatting models.
 
 ## **Conclusion – Which Gaussian Splatting Tool is Right for You?**  
 
