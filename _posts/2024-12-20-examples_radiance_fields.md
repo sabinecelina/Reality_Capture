@@ -36,13 +36,48 @@ Scaniverse does more than just quick scans. It allows you to export models as PL
 
 If you're looking for a quick and accessible way to experiment with Gaussian Splatting, Scaniverse is a great place to start.
 
-## KIRI Engine: 3D Scanner App for iPhone, Android and Web
+# LUMA AI - Gaussian Splatting for your Phone
+Luma AI makes Gaussian Splatting accessible with a simple capture process. Unlike Scaniverse, it processes data in the cloud, taking about 20 to 30 minutes before delivering the final model. Originally focused on NeRFs, Luma AI switched to Gaussian Splatting for faster rendering and better compatibility. This update also brought Android support, expanding its reach beyond iOS. Luma AI offers multiple export formats for different workflows:
+- Android: .obj, .gb, or AR viewing
+- iOS: .obj, .usdz, Gaussian Splatting format, or raw point clouds
 
-KIRI Engine continues to push the boundaries of 3D scanning by offering tools like 3D Gaussian Splatting (3DGS) and its improved 3DGS to Mesh 2.0 pipeline. This update enhances the conversion of Gaussian splats into surface meshes with better handling of reflective and transparent materials, thanks to advanced normal prediction and reflection removal techniques. KIRI Engine supports multiple export formats for meshes (OBJ, PLY, GLTF, and more), and a .ply file for gaussian splattings. 
+With its cloud-based approach and broad export support, Luma AI is a great choice for users who don’t mind waiting a bit for high-quality results.
+<div style="display: flex; justify-content: center; margin: 20px 0;"> 
+<iframe src="https://lumalabs.ai/embed/4d69d7d9-5dd5-41af-a5cc-e542184d8bd3?mode=video&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="375" height="500" frameborder="0" title="luma embed" style="border: none;"></iframe></div>
+<div style="display: flex; justify-content: center; margin: 20px 0;"> 
+<a style="justify-content: center;" href="https://lumalabs.ai/embed/4d69d7d9-5dd5-41af-a5cc-e542184d8bd3?mode=video&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false">Watch the example here</a> </div>
 
-A highlight of KIRI Engine is its new masking functionality, which automatically removes backgrounds from 3DGS models. This feature is designed to help create cleaner outputs, perfect for isolated objects. However, as shown in the images below, the app mistakenly includes the books in the object rather than recognizing them as part of the background. Additionally, the quality of the Gaussian Splats appears lower compared to Scaniverse. 
+## KIRI Engine – 3D Gaussian Splatting with Advanced Mesh Conversion
+
+KIRI Engine offers 3DGS along with a **Mesh 2.0 pipeline**, improving the conversion of Gaussian splats into detailed meshes. This update enhances handling of reflective and transparent materials using advanced normal prediction and reflection removal techniques.  
+
+### Key Features
+- Export options: Supports **OBJ, PLY, GLTF** for meshes and `.ply` for Gaussian Splats.  
+- Automatic background removal: Helps isolate objects, though it can misidentify certain elements as part of the scene.  
+- Adjustable lighting and contrast: Allows fine-tuning of scans for better results.  
+
+### Key points
+- **High mesh quality**
+- **Cloud-based processing** 
+- **Subscription model** – Pro version required (€90/year) to unlock scanning capabilities.  
+
+KIRI Engine is a powerful tool for users who need high-quality meshes from Gaussian Splats, but its reliance on cloud computing and paid access model make it less accessible compared to free alternatives like Scaniverse.
 
 <div style="display: flex; justify-content: center; gap: 10px;">
   <img width="30%" src="{{ '/assets/2024-12-20/KIRI_engine.jpeg' | prepend: site.baseurl }}" alt="KIRI Engine">
   <img width="30%" src="{{ '/assets/2024-12-20/KIRI_engine_blur.jpeg' | prepend: site.baseurl }}" alt="KIRI Engine">
 </div>
+
+## Postshot – Gaussian Splatting for Windows User with NVIDIA GPU
+
+Postshot is a powerful desktop software designed for creating photorealistic 3D scenes using Neural Radiance Fields (NeRFs) and Gaussian Splatting. Unlike mobile apps that rely on cloud processing, everything runs locally, giving users full control over their data.
+
+Key Features
+- Works with any camera – Capture scenes with a phone or DSLR and process them on your PC.
+- Live preview during training – Watch the 3D model take shape in real time.
+- Full local processing – No cloud uploads, ensuring faster iteration and data privacy.
+- Advanced editing tools – Adjust lighting, contrast, and cropping within the software.
+- Export support – Compatible with Blender, Unreal Engine, After Effects, and more.
+- Camera position export/import – Maintain precise framing for seamless integration into other workflows.
+
+Postshot is ideal for users with an Nvidia RTX GPU who want to process 3D representations without relying on cloud-based services. Simply capture a scene with your phone and load it into Postshot to start experimenting.
