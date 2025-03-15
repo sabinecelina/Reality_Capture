@@ -3,7 +3,7 @@ title: Reality Capture
 description: >
     Homepage Sabine Schleise
 baseurl: "/Reality_Capture" # the subpath of your site, e.g. /blog/
-url: "https://sabinecelina.github.io" # the base hostname & protocol for your site
+url: "www.sabineschleise.com" # the base hostname & protocol for your site
 
 author:
   fullname: Sabine Schleise

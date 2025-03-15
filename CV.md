@@ -27,6 +27,10 @@ subtitle: Sabine Schleise
 - Conducting research and implementing advanced technologies for reality capture.
 - Developing precise methods to digitally process real-world environments.  
 
+**Lecturer** - Hochschule Furtwangen <span style="float: right;">10/2023 - 02/2024</span>  
+- Taught the course *Management, Wertschöpfungsprozesse und Technologien*.
+- Focused on delivering practical and theoretical insights into value creation and modern management technologies in the context of AI.
+
 ### EDUCATION
 
 Hochschule Furtwangen <span style="float: right;">03/2022 - 10/2023</span>  

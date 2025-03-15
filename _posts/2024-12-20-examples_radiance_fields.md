@@ -1,15 +1,17 @@
 ---
 layout: page
-title:  "The Cutting-Edge World of 3D Representations: Tools, Techniques, and More"
+title:  "The Cutting-Edge World of 3D Representations"
 date:   2024-12-20 16:21:00 +0530
 categories: ["general"]
 ---
 
 # WORK IN PROGRESS
 
-Photogrammetry and tools like Metashape are well-known and have been around for quite some time. But since the groundbreaking Neural Radiance Fields (NeRFs) paper in 2021, the game has changed. Suddenly, there were new methods to capture 3D scenes with unprecedented realism. The challenge? For a long time, these techniques were so cutting-edge that only developers could experiment with them – no user-friendly tools in sight.
+The challenge of reconstructing three-dimensional structures from two-dimensional images has long been a complex problem in computer vision. Structure-from-Motion (SfM) provided an early pipeline to tackle this challenge, enabling 3D scene reconstruction from image sequences. However, the field underwent a paradigm shift in 2020 with the introduction of Neural Radiance Fields (NeRFs). This groundbreaking technique revolutionized 3D capture, offering an unprecedented level of realism by encoding volumetric radiance fields within neural networks.
 
-Fast forward to today, and the landscape looks very different. A variety of tools have emerged, making it easier than ever for non-developers to dive into the world of 3D representations like NeRFs and Gaussian Splattings. In this blog post, I’ll take a closer look at these tools, evaluate their strengths and weaknesses, and show how they’re pushing 3D representation to new heights. This blog aims to answer the question: What’s possible with Gaussian Splattings as of today? Let’s find out!
+NeRFs rapidly gained popularity, excelling in photorealistic rendering, particularly in scenarios with complex lighting and reflective surfaces. Following the explosion of NeRFs, a new method emerged in 2023: Gaussian Splatting. Unlike NeRFs, which rely on deep neural networks, Gaussian Splatting represents 3D scenes using point-based rendering with Gaussian primitives. This approach significantly reduces computational demands, allowing for faster training and rendering while maintaining high-quality visual fidelity.
+
+For years, these cutting-edge techniques were accessible only to developers, as user-friendly tools were nearly nonexistent. Fast forward to today, and the landscape has changed dramatically. A variety of accessible tools have emerged, empowering beginners to explore 3D representations like Gaussian Splatting with ease. Each of these tools caters to different needs, from quick mobile captures to high-end processing on powerful GPUs. The growing accessibility of these applications marks a turning point for 3D scene representation. What once required extensive computational resources and technical expertise is now within reach for hobbyists, artists, and professionals alike. Let’s take a look at some of the most prominent options available.
 
 ## Scaniverse - Free 3D Scanner - Gaussian Splatting for iOS
 
