@@ -82,7 +82,7 @@ Luma AI makes Gaussian Splatting accessible with a simple capture process. Unlik
 - Multiple export formats: OBJ, USDZ, GB, PLY
 
 <div style="display: flex; justify-content: center; margin: 20px 0;"> 
-<iframe src="https://lumalabs.ai/embed/4d69d7d9-5dd5-41af-a5cc-e542184d8bd3?mode=video&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="375" height="500" frameborder="0" title="luma embed" style="border: none;"></iframe></div>
+<iframe src="https://lumalabs.ai/embed/4d69d7d9-5dd5-41af-a5cc-e542184d8bd3?mode=video&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=true" width="375" height="500" frameborder="0" title="luma embed" style="border: none;"></iframe></div>
 <div style="display: flex; justify-content: center; margin: 5px 0;"><i>Interactive demo of a scan made by LUMA AI</i></div>
 ## KIRI Engine – When You Need Pro-Level Mesh Conversion
 
