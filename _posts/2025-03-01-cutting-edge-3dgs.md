@@ -133,6 +133,7 @@ Polycam is a versatile 3D scanning tool that offers multiple ways to generate Ga
 
 ## BONUS: Supersplat – A Powerful Gaussian Editor
 If you want to edit Gaussian Splats, check out Supersplat!
+
 **What Can Supersplat Do?**
 - Delete, transform, and adjust splats
 - Select points by histogram (for precise editing)
