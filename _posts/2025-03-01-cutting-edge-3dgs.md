@@ -5,35 +5,42 @@ date:   2025-03-01 16:21:00 +0530
 categories: ["general"]
 ---
 
-Curious about Gaussian Splatting but unsure where to start? You’re not alone.  
+Curious about Gaussian Splatting but unsure where to start? You’re not alone. This tutorial is here to guide you - whether you’re just curious or ready to create your own Gaussian Splatting models. I will show you how to get started quickly and easily, helping you explore different tools and methods to generate stunning 3D representations with minimal effort.
 
-A key reason why **Gaussian Splatting** is gaining traction? **Performance.** Unlike traditional 3D meshes or AI-powered NeRFs, Gaussian Splats can render over **1 million points in real time**—even on mobile devices. That’s lightning-fast compared to methods that rely on expensive rendering pipelines or AI inference. But it’s not just about speed. **Gaussian Splatting excels at capturing real-world materials where traditional geometry falls short:**  
+<details>
+  <summary>What makes Gaussian Splatting so powerful? Click to expand</summary>
+  <p>A key reason why <strong>Gaussian Splatting</strong> is gaining traction? <strong>Performance.</strong> Unlike traditional 3D meshes or AI-powered NeRFs, Gaussian Splats can render over <strong>1 million points in real time</strong>—even on mobile devices. That’s lightning-fast compared to methods that rely on expensive rendering pipelines or AI inference. But it’s not just about speed. <strong>Gaussian Splatting excels at capturing real-world materials where traditional geometry falls short:</strong></p>
 
-- **Handles “fuzzy” objects** – Hair, fur, smoke, clouds, grass? Gaussian Splats blend them naturally.  
-- **No rigid surfaces** – Unlike meshes with hard boundaries, Gaussians allow for soft, organic transitions.  
-- **Optimized for real-time applications** – Ideal for games, VR, AR, and interactive 3D without the heavy computational cost of NeRFs.  
+  <ul>
+    <li><strong>Handles “fuzzy” objects</strong> – Hair, fur, smoke, clouds, grass? Gaussian Splats blend them naturally.</li>
+    <li><strong>No rigid surfaces</strong> – Unlike meshes with hard boundaries, Gaussians allow for soft, organic transitions.</li>
+    <li><strong>Optimized for real-time applications</strong> – Ideal for games, VR, AR, and interactive 3D without the heavy computational cost of NeRFs.</li>
+  </ul>
 
-## How does it compare to Photogrammetry and NeRFs?  
-- **Photogrammetry (OBJ + texture)** → Produces detailed 3D meshes but struggles with soft, fuzzy, or transparent objects.  
-- **NeRFs (neural networks)** → AI-powered 3D reconstructions with realistic lighting but require a trained model for rendering.  
-- **Gaussian Splatting (PLY + colors)** → Uses thousands of tiny Gaussians to represent scenes, handling complex materials (hair, clouds, grass) better than traditional meshes.  
+  <h2>How does it compare to Photogrammetry and NeRFs?</h2>
+  <ul>
+    <li><strong>Photogrammetry (OBJ + texture)</strong> → Produces detailed 3D meshes but struggles with soft, fuzzy, or transparent objects.</li>
+    <li><strong>NeRFs (neural networks)</strong> → AI-powered 3D reconstructions with realistic lighting but require a trained model for rendering.</li>
+    <li><strong>Gaussian Splatting (PLY + colors)</strong> → Uses thousands of tiny Gaussians to represent scenes, handling complex materials (hair, clouds, grass) better than traditional meshes.</li>
+  </ul>
 
-## The Common Thread: Structure from Motion (SfM)  
+  <h2>The Common Thread: Structure from Motion (SfM)</h2>
+  <p>No matter which method you choose, <strong>it all starts with SfM</strong>—the foundation of modern 3D reconstruction:</p>
 
-No matter which method you choose, **it all starts with SfM**—the foundation of modern 3D reconstruction:  
+  <ul>
+    <li><strong>Photogrammetry</strong> → Converts sparse point clouds into dense meshes (<strong>RealityCapture</strong>, <strong>Agisoft Metashape</strong>).</li>
+    <li><strong>NeRFs</strong> → Uses camera parameters to train a neural network (<strong>Instant-NGP</strong>).</li>
+    <li><strong>Gaussian Splatting</strong> → Optimizes Gaussian splats from a sparse cloud (<strong>Postshot</strong>, <strong>Luma AI</strong>, <strong>Scaniverse</strong>).</li>
+  </ul>
 
-- **Photogrammetry** → Converts sparse point clouds into dense meshes (**RealityCapture**, **Agisoft Metashape**).  
-- **NeRFs** → Uses camera parameters to train a neural network (**Instant-NGP**).  
-- **Gaussian Splatting** → Optimizes Gaussian splats from a sparse cloud (**Postshot**, **Luma AI**, **Scaniverse**).  
+  <p>Tools like <strong>Colmap</strong> and <strong>RealityCapture</strong> are widely used across these workflows, as they extract crucial camera intrinsics & extrinsics for NeRFs and Gaussian Splatting alike.</p>
+</details>
 
-Tools like **Colmap** and **RealityCapture** are widely used across these workflows, as they extract crucial camera intrinsics & extrinsics for NeRFs and Gaussian Splatting alike.  
+## Getting Started Is Easier Than You Think
 
-## The Best Part? You Don’t Need to Be an Expert  
-
-Getting started is easier than you think. This guide will walk you through everything—**step by step, without the tech overwhelm.** No endless installations, no PhD required. Just practical tools and a fast track to creating stunning 3D representations.  
+You don’t need to be an expert to dive into Gaussian Splatting. No overwhelming setups, no complex installations, and definitely no PhD required. This guide will walk you through everything—step by step, with practical tools that help you create stunning 3D models effortlessly.
 
 **Ready to dive in? Let’s go.**  
-
 
 ### **Which Tool Should You Use? - A brief overview**  
 
