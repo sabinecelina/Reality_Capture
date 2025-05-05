@@ -20,3 +20,8 @@ styles: [agate, androidstudio, arta, asceti, atelier-cave.dark, atelier-cave.lig
 # Build settings
 highlighter: null
 markdown: kramdown
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
