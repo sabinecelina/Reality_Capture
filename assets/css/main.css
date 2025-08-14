@@ -33,6 +33,41 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+  margin: 0 auto;
+}
+
+/* Zentriere alle Videos */
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Zentriere Bilder und Videos in Blog-Einträgen spezifisch */
+.post img,
+.post video,
+.blog img,
+.blog video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2em auto 4em auto;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+/* Abstand zwischen aufeinanderfolgenden Medien */
+.post img + img,
+.post video + video,
+.post img + video,
+.post video + img,
+.blog img + img,
+.blog video + video,
+.blog img + video,
+.blog video + img {
+  margin-top: 3em;
 }
 
 #about-img {
