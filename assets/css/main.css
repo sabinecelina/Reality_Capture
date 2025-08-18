@@ -406,6 +406,12 @@ video {
     padding: 0 16px;
   }
 }
+#about-img {
+  border-radius: 13%;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 3%;
+}
 
 @media (max-width: 900px) {
   .wrapper {
