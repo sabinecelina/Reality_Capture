@@ -1,2 +1,24 @@
 <script src="{{ "/assets/vendor/highlight/highlight.pack.js" | prepend: site.baseurl }}"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+
+<!-- Hamburger Menu JavaScript -->
+<script>
+function toggleMenu() {
+  const menu = document.querySelector('.menu');
+  const hamburger = document.querySelector('.hamburger');
+  
+  menu.classList.toggle('active');
+  hamburger.classList.toggle('active');
+}
+
+// Schließe Menü beim Klick außerhalb
+document.addEventListener('click', function(event) {
+  const menu = document.querySelector('.menu');
+  const hamburger = document.querySelector('.hamburger');
+  
+  if (!hamburger.contains(event.target) && !menu.contains(event.target)) {
+    menu.classList.remove('active');
+    hamburger.classList.remove('active');
+  }
+});
+</script>
