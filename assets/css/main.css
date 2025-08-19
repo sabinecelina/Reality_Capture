@@ -94,6 +94,44 @@ video {
   margin: 0;
 }
 
+/* Tutorial: Hero-Bild und Frame-Galerie */
+.example-hero {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 0.5rem auto 1rem auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.frame-gallery {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.frame-gallery img {
+  height: 90px;
+  width: auto;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Einzelnes Oscar-Hero-Bild */
+.oscar-img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0.5rem auto 1.25rem auto; /* zentriert */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
 #about-img {
   border-radius: 13%;
   max-width: 70%;
@@ -433,6 +471,18 @@ video {
   .gif-pair video {
     max-width: 48%;
   }
+
+  /* Frame-Galerie feinjustieren */
+  .frame-gallery {
+    gap: 8px;
+  }
+  .frame-gallery img {
+    height: 80px;
+  }
+
+  .oscar-img {
+    max-width: 760px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -540,6 +590,17 @@ video {
   .gif-pair img,
   .gif-pair video {
     max-width: 100%;
+  }
+
+  .frame-gallery {
+    gap: 6px;
+  }
+  .frame-gallery img {
+    height: 72px;
+  }
+
+  .oscar-img {
+    max-width: 640px;
   }
   .project-entry,
   .project-entry.reverse {
@@ -658,6 +719,13 @@ video {
     margin: 0.8em auto 1.5em auto;
     padding: 0.3em;
   }
+  .frame-gallery img {
+    height: 64px;
+  }
+
+  .oscar-img {
+    max-width: 100%;
+  }
   .about-img-front {
     gap: 8px;
     margin: 12px 0;
@@ -701,6 +769,13 @@ video {
     margin: 0.6em auto 1.2em auto;
     padding: 0.2em;
   }
+  .frame-gallery img {
+    height: 58px;
+  }
+
+  .oscar-img {
+    max-width: 100%;
+  }
   .about-img-front {
     gap: 6px;
     margin: 8px 0;
@@ -711,6 +786,16 @@ video {
 }
 
 /* =Sonstiges *//*************************************************************/
+/* Codeblock-Schriftgröße leicht reduzieren */
+.post pre,
+.blog pre,
+.highlight pre,
+.highlighter-rouge pre,
+pre,
+pre code {
+  font-size: 0.9em;
+}
+
 blockquote {
   letter-spacing: 1px;
   margin: 32px 0;
@@ -780,4 +865,36 @@ blockquote footer {
 
 .read-more:hover {
   color: #0a2540;
+}
+
+/* Metashape split layout */
+.metashape-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.metashape-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.metashape-caption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.4rem;
+}
+
+.metashape-text {
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .metashape-split {
+    grid-template-columns: 1fr;
+  }
 }
