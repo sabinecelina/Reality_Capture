@@ -30,11 +30,12 @@ Ich habe das Objekt gefilmt und dann mit einem einfachen Python-Skript alle Fram
 
 
 <div class="frame-gallery">
-  {% assign oscar_frames = site.static_files | where_exp: "f", 'f.path contains "/assets/oscar/"' %}
-  {% assign oscar_images = oscar_frames | where_exp: "f", 'f.extname == ".jpg" or f.extname == ".jpeg" or f.extname == ".png" or f.extname == ".JPG" or f.extname == ".JPEG" or f.extname == ".PNG"' %}
-  {% assign oscar_sorted = oscar_images | sort: "name" %}
-  {% for f in oscar_sorted %}
-    <img src="{{ f.path | relative_url }}" alt="Frame {{ f.name }}">
+  {% for f in site.static_files %}
+    {% if f.path contains '/assets/oscar/' %}
+      {% if f.name contains '.jpg' or f.name contains '.jpeg' or f.name contains '.png' %}
+        <img src="{{ f.path | relative_url }}" alt="Frame {{ f.name }}">
+      {% endif %}
+    {% endif %}
   {% endfor %}
   {% comment %} Hinweis: Die Galerie bindet automatisch alle Bilder aus assets/oscar ein. {% endcomment %}
 </div>
