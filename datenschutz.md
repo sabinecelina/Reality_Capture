@@ -7,7 +7,15 @@ sitemap:
 
 # Datenschutzerklärung
 
-## 1. Verantwortliche Person
+## Kurzbeschreibung
+
+Diese Website verarbeitet personenbezogene Daten verantwortungsvoll und transparent. Wir erheben Daten nur insoweit, wie dies für die Bereitstellung unserer Inhalte erforderlich ist. Externe Dienste wie Google Analytics können zur Analyse verwendet werden. Sie haben jederzeit das Recht, Auskunft über Ihre Daten zu erhalten, diese zu korrigieren oder zu löschen. Weitere Details finden Sie in der ausführlichen Beschreibung unten.
+
+---
+
+## Ausführliche Beschreibung
+
+### 1. Verantwortliche Person
 
 **Name:** Sabine Schleise  
 
