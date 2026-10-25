@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CV
-subtitle: Sabine Schleise
+subtitle: Sabine Rümmele
 ---
 
 <span style="float: right; "><a href="{{ '/assets/CV.pdf' | prepend: site.baseurl }}"><strong>> Download as PDF</strong></a> </span>

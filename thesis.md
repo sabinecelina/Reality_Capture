@@ -6,7 +6,7 @@ layout: page
 Neural Radiance Fields in the context of the Industrial Metaverse
 </h1>
 <h3 style="text-align: center;">
-Sabine Schleise <br>
+Sabine Rümmele <br>
 Hochschule Furtwangen
 </h3>
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hello
-subtitle: My name is Sabine Schleise
+subtitle: My name is Sabine Rümmele
 sitemap:
   priority: 0.9
 ---
@@ -17,7 +17,7 @@ sitemap:
   <!-- Video Section -->
   <div class="video-section">
     <video autoplay muted loop>
-      <source src="{{ '/assets/Sabine_Schleise_3DGS.mp4' | prepend: site.baseurl }}" type="video/mp4">
+      <source src="{{ '/assets/Sabine_ruemmele_3DGS.mp4' | prepend: site.baseurl }}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>

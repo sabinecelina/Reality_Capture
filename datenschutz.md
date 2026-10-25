@@ -17,7 +17,7 @@ Diese Website verarbeitet personenbezogene Daten verantwortungsvoll und transpar
 
 ### 1. Verantwortliche Person
 
-**Name:** Sabine Schleise  
+**Name:** Sabine Rümmele  
 
 **Adresse:** Weingartenstr. 27
 

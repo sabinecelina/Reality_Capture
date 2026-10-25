@@ -7,7 +7,7 @@ Implementation of a Modular Camera Calibration Application in Mathematica
 </h1>
 
 <h3 style="text-align: center;">
-Sabine Schleise <br>
+Sabine Rümmele <br>
 Hochschule Furtwangen
 </h3>
 

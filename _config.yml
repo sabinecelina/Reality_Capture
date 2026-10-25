@@ -1,14 +1,14 @@
 # Site settings
 title: Reality Capture
 description: >
-    Homepage Sabine Schleise
+    Homepage Sabine Rümmele
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "www.sabineschleise.com" # the base hostname & protocol for your site
+url: "www.sabineruemmele.com" # the base hostname & protocol for your site
 
 author:
-  fullname: Sabine Schleise
+  fullname: Sabine Rümmele
   github: sabinecelina
-  linkedin: Sabine Schleise
+  linkedin: Sabine Rümmele
   email: sabine.schleise@icloud.com
 
 
