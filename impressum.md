@@ -15,9 +15,7 @@ Dieses Impressum gilt für die Website sabineruemmele.com und für die App „Ad
 ## Angaben gemäß § 5 DDG
 
 Sabine Rümmele  
-ADRESSE_ZEILE_1  
-ADRESSE_ZEILE_2  
-Deutschland
+Anschrift wird in Kürze ergänzt.
 
 ## Kontakt
 
@@ -45,9 +43,7 @@ This legal notice applies to the website sabineruemmele.com and to the app “Ad
 ## Information according to § 5 DDG (German Digital Services Act)
 
 Sabine Rümmele  
-ADRESSE_ZEILE_1  
-ADRESSE_ZEILE_2  
-Germany
+Postal address will be added shortly.
 
 ## Contact
 
