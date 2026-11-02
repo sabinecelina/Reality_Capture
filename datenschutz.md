@@ -19,8 +19,6 @@ Diese Website verarbeitet personenbezogene Daten verantwortungsvoll und transpar
 
 **Name:** Sabine Rümmele  
 
-**Anschrift:** siehe [Impressum](/impressum)
-
 **E-Mail:** [me@sabineschleise.de](mailto:me@sabineschleise.de)
 
 ## 2. Umfang der Datenverarbeitung

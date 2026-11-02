@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Impressum
-permalink: /impressum
+title: Impressum – Adipöser Arktisvogel
+permalink: /arktisvogel/impressum
 sitemap:
   priority: 0.5
 ---
@@ -10,7 +10,7 @@ sitemap:
 
 # Impressum {#de}
 
-Dieses Impressum gilt für die Website sabineruemmele.com und für die App „Adipöser Arktisvogel“ (Google Play und Apple App Store).
+Dieses Impressum gilt für die App „Adipöser Arktisvogel“ (Google Play und Apple App Store).
 
 ## Angaben gemäß § 5 DDG
 
@@ -31,14 +31,13 @@ Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer V
 
 ## Datenschutz
 
-- [Datenschutzerklärung für diese Website](/datenschutz)
-- [Datenschutzerklärung für die App „Adipöser Arktisvogel“](/arktisvogel/datenschutz)
+[Datenschutzerklärung für die App](/arktisvogel/datenschutz)
 
 ---
 
 # Legal Notice {#en}
 
-This legal notice applies to the website sabineruemmele.com and to the app “Adipöser Arktisvogel” (Google Play and Apple App Store).
+This legal notice applies to the app “Adipöser Arktisvogel” (Google Play and Apple App Store).
 
 ## Information according to § 5 DDG (German Digital Services Act)
 
@@ -59,5 +58,4 @@ I am not willing or obliged to participate in dispute resolution proceedings bef
 
 ## Privacy
 
-- [Privacy policy for this website](/datenschutz)
-- [Privacy policy for the app “Adipöser Arktisvogel”](/arktisvogel/datenschutz)
+[Privacy policy for the app](/arktisvogel/datenschutz#en)

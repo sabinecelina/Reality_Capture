@@ -15,7 +15,7 @@ Stand: November 2026
 ## 1. Verantwortliche
 
 Sabine Rümmele  
-Anschrift: siehe [Impressum](/impressum)  
+Anschrift: siehe [Impressum](/arktisvogel/impressum)  
 E-Mail: [me@sabineschleise.de](mailto:me@sabineschleise.de)
 
 ## 2. Überblick
@@ -88,7 +88,7 @@ Last updated: November 2026
 ## 1. Controller
 
 Sabine Rümmele  
-Address: see [legal notice](/impressum#en)  
+Address: see [legal notice](/arktisvogel/impressum#en)  
 Email: [me@sabineschleise.de](mailto:me@sabineschleise.de)
 
 ## 2. Overview
