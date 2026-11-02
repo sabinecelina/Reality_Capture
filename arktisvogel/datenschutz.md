@@ -15,6 +15,7 @@ Stand: November 2026
 ## 1. Verantwortliche
 
 Sabine Rümmele  
+Anschrift: siehe [Impressum](/impressum)  
 E-Mail: [me@sabineschleise.de](mailto:me@sabineschleise.de)
 
 ## 2. Überblick
@@ -46,7 +47,7 @@ Datenschutzerklärung von Google: [https://policies.google.com/privacy](https://
 
 Die kostenlose Version zeigt Werbebanner über Google AdMob, einen Dienst der Google Ireland Limited (Adresse siehe oben).
 
-**Einwilligung:** Beim ersten Start fragt dich die App über die Einwilligungsplattform von Google (User Messaging Platform), ob du personalisierter Werbung und dem Zugriff auf Informationen auf deinem Gerät zustimmst. Deine Auswahl kannst du jederzeit unter „Impressum/Datenschutz“ → „Werbe-Einstellungen“ ändern oder widerrufen.
+**Einwilligung:** Beim ersten Start fragt dich die App über die Einwilligungsplattform von Google (User Messaging Platform), ob du personalisierter Werbung und dem Zugriff auf Informationen auf deinem Gerät zustimmst. Deine Auswahl kannst du jederzeit unter „Impressum & Datenschutz“ → „Werbe-Einstellungen“ ändern oder widerrufen.
 
 **Verarbeitete Daten:** Je nach deiner Auswahl kann AdMob unter anderem die Werbe-ID deines Geräts, deine IP-Adresse, Geräte- und App-Informationen, deinen ungefähren Standort (abgeleitet aus der IP-Adresse) sowie Interaktionen mit Anzeigen verarbeiten. Diese Daten nutzt Google, um Anzeigen auszuliefern, zu messen und Missbrauch zu verhindern. Mit deiner Einwilligung werden auch personalisierte Anzeigen angezeigt. Ohne Einwilligung werden nur nicht personalisierte oder eingeschränkte Anzeigen ausgeliefert.
 
@@ -87,6 +88,7 @@ Last updated: November 2026
 ## 1. Controller
 
 Sabine Rümmele  
+Address: see [legal notice](/impressum#en)  
 Email: [me@sabineschleise.de](mailto:me@sabineschleise.de)
 
 ## 2. Overview
@@ -118,7 +120,7 @@ Google's privacy policy: [https://policies.google.com/privacy](https://policies.
 
 The free version shows banner ads via Google AdMob, a service of Google Ireland Limited (address above).
 
-**Consent:** On first launch, the app uses Google's consent platform (User Messaging Platform) to ask whether you agree to personalised advertising and to information being accessed on your device. You can change or withdraw your choice at any time under “Legal/Privacy” → “Ad settings”.
+**Consent:** On first launch, the app uses Google's consent platform (User Messaging Platform) to ask whether you agree to personalised advertising and to information being accessed on your device. You can change or withdraw your choice at any time under “Imprint & Privacy” → “Ad settings”.
 
 **Data processed:** Depending on your choice, AdMob may process your device's advertising ID, your IP address, device and app information, your approximate location (derived from your IP address) and your interactions with ads. Google uses this data to serve and measure ads and to prevent fraud. With your consent, personalised ads are shown. Without consent, only non-personalised or limited ads are served.
 

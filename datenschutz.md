@@ -19,9 +19,7 @@ Diese Website verarbeitet personenbezogene Daten verantwortungsvoll und transpar
 
 **Name:** Sabine Rümmele  
 
-**Adresse:** Weingartenstr. 27
-
-**Land:** 79211 Denzlingen
+**Anschrift:** siehe [Impressum](/impressum)
 
 **E-Mail:** [me@sabineschleise.de](mailto:me@sabineschleise.de)
 
