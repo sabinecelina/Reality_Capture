@@ -15,9 +15,6 @@ Stand: November 2026
 ## 1. Verantwortliche
 
 Sabine Rümmele  
-Weingartenstr. 27  
-79211 Denzlingen  
-Deutschland  
 E-Mail: [me@sabineschleise.de](mailto:me@sabineschleise.de)
 
 ## 2. Überblick
@@ -90,9 +87,6 @@ Last updated: November 2026
 ## 1. Controller
 
 Sabine Rümmele  
-Weingartenstr. 27  
-79211 Denzlingen  
-Germany  
 Email: [me@sabineschleise.de](mailto:me@sabineschleise.de)
 
 ## 2. Overview
