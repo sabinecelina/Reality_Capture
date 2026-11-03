@@ -16,7 +16,7 @@ Stand: November 2026
 
 Sabine Rümmele  
 Anschrift: siehe [Impressum](/arktisvogel/impressum)  
-E-Mail: [me@sabineschleise.de](mailto:me@sabineschleise.de)
+E-Mail: [me@sabineruemmele.com](mailto:me@sabineruemmele.com)
 
 ## 2. Überblick
 
@@ -89,7 +89,7 @@ Last updated: November 2026
 
 Sabine Rümmele  
 Address: see [legal notice](/arktisvogel/impressum#en)  
-Email: [me@sabineschleise.de](mailto:me@sabineschleise.de)
+Email: [me@sabineruemmele.com](mailto:me@sabineruemmele.com)
 
 ## 2. Overview
 

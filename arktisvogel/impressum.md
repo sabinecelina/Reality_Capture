@@ -19,7 +19,7 @@ Anschrift wird in Kürze ergänzt.
 
 ## Kontakt
 
-E-Mail: [me@sabineschleise.de](mailto:me@sabineschleise.de)
+E-Mail: [me@sabineruemmele.com](mailto:me@sabineruemmele.com)
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
@@ -46,7 +46,7 @@ Postal address will be added shortly.
 
 ## Contact
 
-Email: [me@sabineschleise.de](mailto:me@sabineschleise.de)
+Email: [me@sabineruemmele.com](mailto:me@sabineruemmele.com)
 
 ## Responsible for content according to § 18 (2) MStV
 

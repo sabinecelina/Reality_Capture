@@ -19,7 +19,7 @@ Diese Website verarbeitet personenbezogene Daten verantwortungsvoll und transpar
 
 **Name:** Sabine Rümmele  
 
-**E-Mail:** [me@sabineschleise.de](mailto:me@sabineschleise.de)
+**E-Mail:** [me@sabineruemmele.com](mailto:me@sabineruemmele.com)
 
 ## 2. Umfang der Datenverarbeitung
 
@@ -35,7 +35,7 @@ Diese Website kann Cookies verwenden, um die Benutzerfreundlichkeit zu verbesser
 
 ## 5. Ihre Rechte
 
-Sie haben das Recht, Auskunft über die gespeicherten Daten zu erhalten und diese zu korrigieren oder zu löschen. Bitte kontaktieren Sie uns unter [me@sabineschleise.de](mailto:me@sabineschleise.de).
+Sie haben das Recht, Auskunft über die gespeicherten Daten zu erhalten und diese zu korrigieren oder zu löschen. Bitte kontaktieren Sie uns unter [me@sabineruemmele.com](mailto:me@sabineruemmele.com).
 
 ## 6. Änderungen der Datenschutzerklärung
 
