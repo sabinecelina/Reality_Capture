@@ -26,3 +26,4 @@ Coming soon to Google Play and the App Store.
 
 - [Datenschutzerklärung / Privacy Policy](/arktisvogel/datenschutz)
 - [Impressum / Legal Notice](/arktisvogel/impressum)
+- [Nutzungsbedingungen / Terms of Use](/arktisvogel/nutzungsbedingungen)
