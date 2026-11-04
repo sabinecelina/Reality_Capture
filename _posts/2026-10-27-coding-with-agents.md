@@ -42,7 +42,7 @@ reminder.<span class="fn">set</span>("check 2h");</code></pre></div>
   <span class="fn">nearestFridge</span>().<span class="fn">put</span>(beer);</code></pre></div>
 </div>
 <p>None of these is wrong. Cold means 8°C in the first program, 5°C in the second and 7°C in the third. I never defined it. The AI did, in a different way each time, and the compiler accepts all three.</p>
-<p>That changes the order of the work. By hand, I had to think before the code would compile. With AI, the code comes first, and the thinking happens afterwards, while I fix it.</p>
+<p>That changes the order of the work. By hand, I had to think before the code would compile. With AI, the code comes first. If something is wrong, I prompt again and the AI fixes that too.</p>
 
 <h2>Two systems</h2>
 <p>Kahneman’s <em>Thinking, Fast and Slow</em> describes two modes of thinking. He is careful to say that the two systems are useful fictions and that the terms come from the psychologists Keith Stanovich and Richard West. They are still the best description I know of what happens when I work with an agent.</p>
@@ -54,7 +54,7 @@ reminder.<span class="fn">set</span>("check 2h");</code></pre></div>
 <!-- TODO Sabine: Die Grafiken basieren auf einer fremden Idee. Quelle raussuchen und in der figcaption nennen. -->
 <figure class="kt-figure"><div class="kt-scroll">
 <img src="/assets/2026-10-26/coding-manual.svg" alt="Timeline of manual coding. We alternate between thinking and fixing in System 2 and coding in System 1. The AI lane is empty.">
-<img src="/assets/2026-10-26/coding-with-ai.svg" alt="Timeline of coding with AI. We prompt in System 1, the AI writes the code, we judge it as looking good in System 1, and only then think and fix in System 2.">
+<img src="/assets/2026-10-26/coding-with-ai.svg" alt="Timeline of coding with AI. We prompt and judge the result as looking good in System 1. The AI does the coding, the thinking and the fixing. The System 2 lane is empty.">
 </div><figcaption>A sketch of how the time is spent, not a measurement.</figcaption></figure>
 <p>The part that matters here is a detail of how the switch happens. Kahneman calls System 2 lazy. It follows the law of least effort and mostly accepts what System 1 suggests. It only takes over when something goes wrong, when System 1 runs into a surprise it cannot handle.</p>
 <p>A compiler error is exactly such a surprise. So is a failing test, or a function you have to name and can’t, because you don’t yet know what it does. We usually describe these as friction. I now think they were also doing a job: they kept pulling us back into System 2 whether we felt like it or not. Thinking was built into the work as a side effect.</p>
