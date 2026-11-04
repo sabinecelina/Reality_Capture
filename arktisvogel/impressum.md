@@ -15,7 +15,10 @@ Dieses Impressum gilt für die App „Adipöser Arktisvogel“ (Google Play und 
 ## Angaben gemäß § 5 DDG
 
 Sabine Rümmele  
-Anschrift wird in Kürze ergänzt.
+c/o Impressumservice Dein-Impressum  
+Stettiner Str. 41  
+35410 Hungen  
+Deutschland
 
 ## Kontakt
 
@@ -42,7 +45,10 @@ This legal notice applies to the app “Adipöser Arktisvogel” (Google Play an
 ## Information according to § 5 DDG (German Digital Services Act)
 
 Sabine Rümmele  
-Postal address will be added shortly.
+c/o Impressumservice Dein-Impressum  
+Stettiner Str. 41  
+35410 Hungen  
+Germany
 
 ## Contact
 
