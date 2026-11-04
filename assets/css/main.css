@@ -1127,3 +1127,20 @@ blockquote footer {
     gap: 2px;
   }
 }
+
+.kt-code .hljs-keyword,
+.kt-code .hljs-built_in,
+.kt-code .hljs-literal,
+.kt-code .hljs-type {
+  color: #1a365d;
+  font-weight: 600;
+}
+
+.kt-code .hljs-number,
+.kt-code .hljs-string {
+  color: #a23b2e;
+}
+
+.kt-code .hljs-comment {
+  color: #6b7280;
+}
