@@ -53,8 +53,8 @@ reminder.<span class="fn">set</span>("check 2h");</code></pre></div>
 <p>Programming has always moved between the two. You decide in System 2, type in System 1, and go back to System 2 for the next decision. The first timeline below shows that rhythm. The second shows what happens to it with AI.</p>
 <!-- TODO Sabine: Die Grafiken basieren auf einer fremden Idee. Quelle raussuchen und in der figcaption nennen. -->
 <figure class="kt-figure"><div class="kt-scroll">
-<img src="/assets/2026-10-26/coding-manual.svg" alt="Timeline of manual coding: thinking, coding, thinking, coding, fixing.">
-<img src="/assets/2026-10-26/coding-with-ai.svg" alt="Timeline of coding with AI: prompt, coding, thinking and fixing, repeated.">
+<img src="/assets/2026-10-26/coding-manual.svg" alt="Timeline of manual coding. We alternate between thinking and fixing in System 2 and coding in System 1. The AI lane is empty.">
+<img src="/assets/2026-10-26/coding-with-ai.svg" alt="Timeline of coding with AI. We prompt in System 1, the AI writes the code, we judge it as looking good in System 1, and only then think and fix in System 2.">
 </div><figcaption>A sketch of how the time is spent, not a measurement.</figcaption></figure>
 <p>The part that matters here is a detail of how the switch happens. Kahneman calls System 2 lazy. It follows the law of least effort and mostly accepts what System 1 suggests. It only takes over when something goes wrong, when System 1 runs into a surprise it cannot handle.</p>
 <p>A compiler error is exactly such a surprise. So is a failing test, or a function you have to name and can’t, because you don’t yet know what it does. We usually describe these as friction. I now think they were also doing a job: they kept pulling us back into System 2 whether we felt like it or not. Thinking was built into the work as a side effect.</p>
