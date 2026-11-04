@@ -21,7 +21,8 @@ Traditional code is deterministic. Programming languages had an exactly defined 
 <p>Now I just tell the AI what I want, and it works out the how. It feels like the natural next step. But for the first time, what I write down doesn’t have one exact meaning. A SQL query can only be read one way. A sentence in English can be read many ways, and the model picks one.</p>
 <p>That doesn’t mean the formal layer is gone. An agent writes ordinary code, and that code still has to parse and type-check. What changed is who the compiler talks to. A type error used to land on my screen and stop me. Now it lands in the agent’s loop and is usually fixed before I see it. The compiler can tell the model that a program is valid. It has no way of telling anyone that this is the program I meant.</p>
 <p>Between what I mean and the code, there used to be a step only I could do, and it was checked. Now that step is a sentence in English.</p>
-<p>Take this one: “If the beer is cold, drink it. Otherwise, put it in the fridge.” In code it is a few lines and does one thing. As a prompt it has a dozen readings. How cold is “cold”? Which fridge? The whole beer or a sip? What if there is no beer? Ask an agent three times and you can get three different programs:</p>
+<p>Take this one: “If the beer is cold, drink it. Otherwise, put it in the fridge.” If I write that by hand, I have to define everything it mentions. A condition like <code>cold</code> needs an actual temperature, and <code>fridge</code> has to exist somewhere. If I leave any of that out, the program doesn’t compile.</p>
+<p>As a prompt, the same sentence goes through without any of those definitions. How cold is “cold”? Which fridge? The whole beer or a sip? What if there is no beer? I don’t have to answer these questions anymore, because the AI answers them for me. Ask an agent three times and you can get three different programs:</p>
 <div class="kt-variants">
 <div class="kt-variant a"><b>Literal and minimal</b><pre class="kt-code"><code><span class="kw">if</span> (beer.temp &lt; 8)
   <span class="fn">drink</span>(beer);
@@ -40,7 +41,7 @@ reminder.<span class="fn">set</span>("check 2h");</code></pre></div>
 <span class="kw">else</span>
   <span class="fn">nearestFridge</span>().<span class="fn">put</span>(beer);</code></pre></div>
 </div>
-<p>None of these is wrong. Each one fills the gaps you left open with a guess. The compiler accepts all three.</p>
+<p>None of these is wrong. Cold means 8°C in the first program, 5°C in the second and 7°C in the third. I never defined it. The AI did, in a different way each time, and the compiler accepts all three.</p>
 
 <h2>Two systems</h2>
 <p>Kahneman’s <em>Thinking, Fast and Slow</em> describes two modes of thinking. He is careful to say that the two systems are useful fictions and that the terms come from the psychologists Keith Stanovich and Richard West. They are still the best description I know of what happens when I work with an agent.</p>
