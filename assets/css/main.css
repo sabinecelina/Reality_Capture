@@ -1144,3 +1144,29 @@ blockquote footer {
 .kt-code .hljs-comment {
   color: #6b7280;
 }
+
+.kt-figure {
+  margin: 28px 0;
+}
+
+.kt-figure img {
+  display: block;
+  width: 100%;
+  min-width: 560px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 4px;
+  box-shadow: none;
+}
+
+.kt-figure figcaption {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 0.85em;
+}
+
+@media (max-width: 720px) {
+  .kt-figure img {
+    max-width: none;
+  }
+}
