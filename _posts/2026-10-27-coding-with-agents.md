@@ -5,12 +5,10 @@ date:   2026-10-26 16:21:00 +0530
 categories: ["general"]
 ---
 
-Traditional code is deterministic. <code>MOV AL, 2</code> assembles to <code>B0 02</code> today, tomorrow, and on every machine with that instruction set. Run the same program on the same input twice and you get the same output. When you don’t, we call it a bug and go looking for it.
-
-For decades that was the deal. Programming languages had an exactly defined syntax and semantics, and a machine enforced them. In 1978 Dijkstra called formal notation “an amazingly effective tool for ruling out all sorts of nonsense”, in a note arguing against programming in natural language. I have been thinking about that note a lot, because natural language is now how I program.
+Traditional code is deterministic. Programming languages had an exactly defined syntax and semantics, and a machine enforced them. In 1978 Dijkstra called formal notation “an amazingly effective tool for ruling out all sorts of nonsense”, in a note arguing against programming in natural language. I have been thinking about that note a lot, because natural language is now how I program with AI.
 
 <h2>Seventy years of giving up control</h2>
-<p>The history of programming is a history of handing control to the machine, one layer at a time. Each time we gave up control over <em>how</em> something gets done, and kept the <em>what</em> exact, because something formal sat underneath.</p>
+<p>The history of programming is a history of handing control to the machine, one layer at a time. In assembly you explain to the computer <em>how</em> to do something, step by step. In SQL you mostly say <em>what</em> you want, and the database works out how to get it. Each layer moved us a little further from how and a little closer to what. But whatever we wrote down, at any layer, still meant exactly one thing, because a formal definition sat underneath.</p>
 <div class="kt-scroll"><table class="kt-table">
 <thead><tr><th>Layer</th><th>What you stopped deciding</th><th>What stayed exact</th></tr></thead>
 <tbody>
@@ -20,8 +18,8 @@ For decades that was the deal. Programming languages had an exactly defined synt
 <tr><td>ORMs and GC, 2000s</td><td>Writing the SQL, freeing the memory</td><td>Types and the API contract</td></tr>
 <tr class="kt-new"><td>LLMs, 2023+</td><td>The how, and now the exact what</td><td>The generated code, but not your request</td></tr>
 </tbody></table></div>
-
-<p>The last row needs some care. The formal layer still exists. An agent writes ordinary code, and that code still has to parse and type-check. What changed is who the compiler talks to. A type error used to land on my screen and stop me. Now it lands in the agent’s loop and is usually fixed before I see it. The compiler can tell the model that a program is valid. It has no way of telling anyone that this is the program I meant.</p>
+<p>And with the big change of AI, I tell the AI what I want, and it works out how. That is why it feels so natural. But for the first time, what I write down doesn’t have one exact meaning. A SQL query can only be read one way. A sentence in English can be read many ways, and the model picks one.</p>
+<p>That doesn’t mean the formal layer is gone. An agent writes ordinary code, and that code still has to parse and type-check. What changed is who the compiler talks to. A type error used to land on my screen and stop me. Now it lands in the agent’s loop and is usually fixed before I see it. The compiler can tell the model that a program is valid. It has no way of telling anyone that this is the program I meant.</p>
 <p>Between what I mean and the code, there used to be a step only I could do, and it was checked. Now that step is a sentence in English.</p>
 <p>Take this one: “If the beer is cold, drink it. Otherwise, put it in the fridge.” In code it is a few lines and does one thing. As a prompt it has a dozen readings. How cold is “cold”? Which fridge? The whole beer or a sip? What if there is no beer? Ask an agent three times and you can get three different programs:</p>
 <div class="kt-variants">
@@ -101,7 +99,7 @@ reminder.<span class="fn">set</span>("check 2h");</code></pre></div>
 <p>A spec only helps if I did the thinking it records, and reading the document afterwards can’t tell me whether I did.</p>
 
 <h2>What I don’t know yet</h2>
-<p>For seventy years we traded control over <em>how</em> for expressiveness, and we could afford it because the <em>what</em> stayed exact. Now the <em>what</em> is the part we hand over in loose language. The computer used to reject what we hadn’t thought through. It now accepts it and answers.</p>
+<p>For seventy years we moved from <em>how</em> to <em>what</em>, and we could afford it because whatever we wrote down stayed exact. Now we state the <em>what</em> in loose language. The computer used to reject what we hadn’t thought through. It now accepts it and answers.</p>
 <p>I am fairly sure that System 2 is the one part of this job that can’t be delegated, because the decisions it makes don’t exist until someone makes them. I am much less sure how we keep it in the loop. The compiler did that without anyone having to care. Discipline is a weak replacement, and much of Kahneman’s book is about how little we can rely on it.</p>
 <p>So I’m curious what others are doing. What interrupts you now that the compiler doesn’t? And if you started programming after agents arrived, where does your practice with feedback come from?</p>
 <hr class="kt-end">
