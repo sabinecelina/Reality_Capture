@@ -1,0 +1,37 @@
+---
+interface Props {
+  title: string;
+  teaser: string;
+  thumbnail: string;
+  slug: string;
+}
+
+const { title, teaser, thumbnail, slug } = Astro.props;
+---
+
+<article class="group">
+  <a
+    href={slug === 'arktisvogel' ? '/arktisvogel/' : `/projects/${slug}/`}
+    class="block rounded-lg border border-gray-200 dark:border-gray-800 hover:border-brand-300 dark:hover:border-brand-700 hover:shadow-md transition-all overflow-hidden"
+  >
+    <div class="aspect-video bg-gray-100 dark:bg-gray-900 overflow-hidden">
+      <img
+        src={thumbnail}
+        alt={title}
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+      />
+    </div>
+    <div class="p-5">
+      <h2 class="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-brand-700 dark:group-hover:text-brand-300 transition-colors mb-2 text-lg leading-snug">
+        {title}
+      </h2>
+      <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+        {teaser}
+      </p>
+      <span class="text-sm font-medium text-brand-700 dark:text-brand-300 group-hover:underline">
+        → Read more
+      </span>
+    </div>
+  </a>
+</article>

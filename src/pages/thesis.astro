@@ -1,0 +1,77 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import VideoEmbed from '../components/VideoEmbed.astro';
+---
+
+<PageLayout
+  title="Masterthesis"
+  description="Neural Radiance Fields in the context of the Industrial Metaverse — Master's thesis by Sabine Rümmele, Erwin-Sick-Award winner."
+>
+  <article class="prose prose-gray dark:prose-invert max-w-none">
+    <h1 class="text-center text-2xl md:text-3xl font-semibold not-prose text-gray-900 dark:text-gray-100 mb-2">
+      Neural Radiance Fields in the context of the Industrial Metaverse
+    </h1>
+    <p class="text-center text-gray-500 dark:text-gray-400 mb-6 not-prose">
+      Sabine Rümmele — Hochschule Furtwangen
+    </p>
+
+    <div class="flex flex-wrap gap-3 justify-center mb-8 not-prose">
+      <a href="https://sabinecelina.github.io/masterthesis-nerf_mv/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Official Thesis Website
+      </a>
+      <a href="https://otik.uk.zcu.cz/bitstream/11025/57388/1/B59-2024.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+        Short Paper Version
+      </a>
+    </div>
+
+    <VideoEmbed
+      src="/assets/ingp_whatif_1.mp4"
+      caption="Rendered results from neural radiance fields — training outcomes applied to complex objects."
+    />
+
+    <h2>Abstract</h2>
+
+    <p>
+      With the advancement of virtual and augmented reality technologies, the term "Metaverse" is becoming increasingly familiar. The Metaverse represents a convergent virtual world for interaction, work, and entertainment. In the industrial sector, the Metaverse opens up new possibilities for training, product development, and collaboration. One of the key elements of the virtual world is the ability to display three-dimensional (3D) scenes.
+    </p>
+
+    <p>
+      A new method called Neural Radiance Fields (NeRF) has recently emerged, which leverages continuous scene representations, typically employing a Multi-Layer Perceptron (MLP) optimized through volumetric ray-marching for the synthesis of novel views of captured scenes. Instead of directly reconstructing the complete 3D scene geometry, NeRF generates a volumetric representation called a "radiance field," capable of creating color and density at every point within the relevant 3D space.
+    </p>
+
+    <p>
+      However, using existing frameworks to generate a neural radiance field from real world data requires developer expertise and considerable effort, which significantly limits their adoption in industry. Therefore, we introduce a NeRF trainer to bridge this gap. This NeRF trainer implementation reduces the complexity of creating neural radiance fields by providing users with a user-friendly tool to construct their own 3D representations.
+    </p>
+
+    <h2>Highlights</h2>
+
+    <h3>Instant-NGP Training</h3>
+    <p>
+      Training process of a neural radiance field using instant-ngp. The object was captured from a 180-degree perspective, utilizing 145 images for training. In the training phase, rapid convergence is achieved in a mere 20 seconds, yielding a visually compelling scene. This performance was attained using a Laptop A 3000 GPU.
+    </p>
+
+    <VideoEmbed
+      src="/assets/media/training-in-ngp.mp4"
+      caption="Instant-NGP: rapid convergence in 20 seconds on a Laptop A 3000 GPU."
+    />
+
+    <h2>NeRF in the context of the Industrial Metaverse</h2>
+
+    <h3>Human Avatar Training</h3>
+    <p>
+      This video presents a neural radiance field of a human avatar captured with Record3D. Remarkably, the entire process of data preparation and model training took a mere 2 minutes. While there are some areas that present challenges, the overall representation of the avatar as a neural radiance field is commendably accurate and realistic.
+    </p>
+
+    <VideoEmbed
+      src="/assets/media/matthias-avatar.mp4"
+      caption="Human avatar neural radiance field — captured and trained in 2 minutes with Record3D."
+    />
+
+    <h3>Hand NeRF</h3>
+
+    <VideoEmbed
+      src="/assets/media/hand-nerf.mp4"
+      caption="Neural radiance field of a human hand — demonstrating fine detail capture."
+    />
+  </article>
+</PageLayout>

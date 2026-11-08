@@ -1,0 +1,33 @@
+---
+interface Props {
+  src: string;
+  type?: string;
+  poster?: string;
+  caption?: string;
+  class?: string;
+}
+
+const { src, type = 'video/mp4', poster, caption, class: className } = Astro.props;
+---
+
+<figure class:list={['my-6', className]}>
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    poster={poster}
+    class="w-full rounded-md shadow-lg bg-gray-100 dark:bg-gray-900"
+  >
+    <source src={src} type={type} />
+    <p class="text-center text-sm text-gray-500 py-4">
+      Your browser does not support the video tag.
+      <a href={src} class="underline">Download the video</a>.
+    </p>
+  </video>
+  {caption && (
+    <figcaption class="text-center text-sm text-gray-500 dark:text-gray-400 mt-2 italic">
+      {caption}
+    </figcaption>
+  )}
+</figure>

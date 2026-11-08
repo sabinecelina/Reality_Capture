@@ -1,0 +1,35 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+
+// Use import.meta.glob to enumerate all photography images
+const imageModules = import.meta.glob('/public/assets/photography/**/*.{jpg,JPG,jpeg,png,PNG}', {
+  eager: false,
+  query: '?url',
+  import: 'default',
+});
+
+// Extract just the public-relative paths (strip the leading /public)
+const images = Object.keys(imageModules).map((key) => key.replace('/public', ''));
+---
+
+<PageLayout title="Gallery" description="A curated photography gallery by Sabine Rümmele — images from various projects and moments.">
+  <header class="mb-10">
+    <h1 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Gallery</h1>
+    <p class="text-gray-600 dark:text-gray-400">
+      A selection of my favorite photographs from various projects and moments.
+    </p>
+  </header>
+
+  <div class="columns-1 sm:columns-2 lg:columns-3 gap-4">
+    {images.map((src) => (
+      <div class="break-inside-avoid mb-4">
+        <img
+          src={src}
+          alt="Photography"
+          class="w-full rounded-md shadow-md hover:shadow-lg transition-shadow object-cover"
+          loading="lazy"
+        />
+      </div>
+    ))}
+  </div>
+</PageLayout>

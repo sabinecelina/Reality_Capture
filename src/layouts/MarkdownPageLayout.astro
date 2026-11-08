@@ -1,0 +1,11 @@
+---
+import PageLayout from './PageLayout.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<PageLayout title={frontmatter.title} description={frontmatter.description}>
+  <article class="prose prose-gray dark:prose-invert max-w-measure">
+    <slot />
+  </article>
+</PageLayout>
