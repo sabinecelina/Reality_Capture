@@ -1,0 +1,46 @@
+---
+interface Props {
+  title: string;
+  date: Date;
+  categories: string[];
+  description?: string;
+  slug: string;
+}
+
+const { title, date, categories, description, slug } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('en-GB', {
+  day: '2-digit',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<article class="group">
+  <a
+    href={`/blog/${slug}/`}
+    class="block p-6 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-brand-300 dark:hover:border-brand-700 hover:shadow-md transition-all"
+  >
+    <div class="flex flex-wrap gap-2 mb-3">
+      {categories.map((cat) => (
+        <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-brand-50 dark:bg-brand-950 text-brand-700 dark:text-brand-300">
+          {cat}
+        </span>
+      ))}
+    </div>
+    <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100 group-hover:text-brand-700 dark:group-hover:text-brand-300 transition-colors mb-2 leading-snug">
+      {title}
+    </h2>
+    {description && (
+      <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-3 line-clamp-2">
+        {description}
+      </p>
+    )}
+    <time
+      datetime={date.toISOString().split('T')[0]}
+      class="text-sm text-gray-500 dark:text-gray-400"
+    >
+      {formattedDate}
+    </time>
+  </a>
+</article>

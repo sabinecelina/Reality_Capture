@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import PageLayout from '../../layouts/PageLayout.astro';
+
+const allProjects = await getCollection('projects');
+const projects = allProjects.sort((a, b) => a.data.order - b.data.order);
+
+const urlFor = (slug: string) => (slug === 'arktisvogel' ? '/arktisvogel/' : `/projects/${slug}/`);
+---
+
+<PageLayout title="Projects" description="Research, creative and technical projects: photogrammetry, 3D reconstruction, apps and interactive media.">
+  <header class="mb-12 max-w-measure">
+    <h1 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Projects</h1>
+    <p class="text-gray-600 dark:text-gray-400">
+      Research, creative and technical projects: photogrammetry, 3D reconstruction, apps and interactive media.
+    </p>
+  </header>
+
+  <ul class="flex flex-col gap-12 md:gap-16">
+    {projects.map((project, i) => (
+      <li>
+        <article class:list={['flex flex-col md:flex-row md:items-center gap-6 md:gap-10', { 'md:flex-row-reverse': i % 2 === 1 }]}>
+          <a href={urlFor(project.slug)} class="block md:w-[300px] shrink-0 group">
+            <img
+              src={project.data.thumbnail}
+              alt={`${project.data.title} thumbnail`}
+              loading="lazy"
+              class="w-full aspect-[3/2] object-cover rounded-lg bg-gray-100 dark:bg-gray-900 group-hover:opacity-90 transition-opacity"
+            />
+          </a>
+          <div class="flex-1 max-w-measure">
+            <h2 class="text-xl md:text-2xl font-semibold text-gray-900 dark:text-gray-50 mb-2">
+              <a href={urlFor(project.slug)} class="text-inherit hover:text-brand-700 dark:hover:text-brand-300">{project.data.title}</a>
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-3">{project.data.teaser}</p>
+            <a href={urlFor(project.slug)} class="text-sm font-medium">Read more →</a>
+          </div>
+        </article>
+      </li>
+    ))}
+  </ul>
+</PageLayout>

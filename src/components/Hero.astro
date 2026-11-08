@@ -1,0 +1,47 @@
+---
+import { SITE_CONFIG } from '../config';
+---
+
+<section class="pt-6 pb-12 md:pt-12 md:pb-20">
+  <div class="grid md:grid-cols-[1fr_auto] gap-10 md:gap-16 items-center">
+    <div class="max-w-measure">
+      <p class="eyebrow mb-4">Research Engineer at SICK AG · Forward Deployed Engineer</p>
+      <h1 class="text-4xl md:text-[3.25rem] font-semibold text-gray-900 dark:text-gray-50 leading-[1.1] mb-6">
+        {SITE_CONFIG.fullname}
+      </h1>
+      <p class="text-gray-600 dark:text-gray-400 mb-4">
+        Hey, welcome to my little corner of the internet! Most of my work starts before any code:
+        figuring out what someone actually needs.
+      </p>
+      <p class="text-gray-600 dark:text-gray-400 mb-4">
+        AI has made building cheap. It hasn't made it easier to know what to build. So that is
+        where I put my attention: I look at the problem, find out what really matters to the people
+        who have it, and build the smallest thing that solves it. Which language or tool that ends
+        up being is secondary.
+      </p>
+      <p class="text-gray-600 dark:text-gray-400 mb-4">
+        Usually the problem is smaller than you'd think. When something becomes possible, it's
+        tempting to build everything around it. But most of the time people are annoyed by one
+        click too many, or they just want to get data from one spreadsheet into another. I'm not
+        out to solve the big problems. I want to make someone's work easier. AI is there to serve
+        people, not the other way round.
+      </p>
+      <p class="text-gray-600 dark:text-gray-400 mb-8">
+        My role keeps evolving with AI.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href="/blog/" class="btn btn-primary">Read the blog</a>
+        <a href="/cv/" class="btn btn-outline">CV</a>
+      </div>
+    </div>
+
+    <div class="flex justify-start md:justify-end">
+      <img
+        src="/assets/img/main.jpg"
+        alt="Sabine Rümmele"
+        class="w-48 h-48 md:w-72 md:h-72 rounded-full object-cover ring-1 ring-brand-200 ring-offset-8 ring-offset-paper dark:ring-brand-900 dark:ring-offset-paper-dark"
+        loading="eager"
+      />
+    </div>
+  </div>
+</section>

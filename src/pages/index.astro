@@ -1,0 +1,88 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import Hero from '../components/Hero.astro';
+import VideoEmbed from '../components/VideoEmbed.astro';
+import { SITE_CONFIG } from '../config';
+
+const holderSteps = [
+  { src: '/assets/img/switch-holder/scan.jpg', caption: 'Scan', alt: '3D scan of a round LED switch on a phone screen' },
+  { src: '/assets/img/switch-holder/prompt.jpg', caption: 'Prompt', alt: 'Chat with Claude Code: glue only, no drilling; it reads the scan, models a holder and exports an STL' },
+  { src: '/assets/img/switch-holder/model.jpg', caption: 'Model', alt: 'Generated holder model in the slicer' },
+  { src: '/assets/img/switch-holder/print.jpg', caption: 'Print', alt: 'The holder on the bed of a 3D printer' },
+  { src: '/assets/img/switch-holder/mounted.jpg', caption: 'Mounted', alt: 'The LED switch sitting in the printed holder on a grey wall' },
+];
+
+---
+
+<PageLayout title={undefined} description={SITE_CONFIG.siteDescription}>
+  <Hero />
+
+  <!-- Examples -->
+  <section class="py-12 md:py-16 border-t border-gray-200 dark:border-gray-800" aria-labelledby="examples-heading">
+    <h2 id="examples-heading" class="eyebrow mb-8">A small example of what I mean</h2>
+
+    <article>
+      <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-50 mb-6">A holder for a light switch</h3>
+      <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
+        {holderSteps.map(({ src, caption, alt }, i) => (
+          <li>
+            <figure>
+              <a href={src} target="_blank" rel="noopener" class="block">
+                <img
+                  src={src}
+                  alt={alt}
+                  loading="lazy"
+                  class="w-full aspect-[3/4] object-cover rounded-md bg-gray-100 dark:bg-gray-900 hover:opacity-90 transition-opacity"
+                />
+              </a>
+              <figcaption class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                <span class="font-medium text-brand-700 dark:text-brand-300">{i + 1}</span>&ensp;{caption}
+              </figcaption>
+            </figure>
+          </li>
+        ))}
+      </ul>
+      <div class="grid md:grid-cols-2 gap-6 md:gap-12 mt-8">
+        <p class="text-gray-600 dark:text-gray-400">
+          My wireless LED switch needed a wall holder that only uses glue. I scanned the switch
+          with photogrammetry on my phone, gave the scan to Claude Code, and it modelled the holder
+          and exported an STL. I checked it in the slicer, printed it, and now it hangs on the wall.
+        </p>
+        <p class="text-gray-600 dark:text-gray-400">
+          I didn't model the holder myself, and I don't need to know how Claude Code did it. Building
+          the object is no longer the hard part. What matters is seeing the problem and knowing which
+          methods can solve it: that a phone scan is precise enough to design from, that a model can
+          turn it into a printable part, and how to check that the result actually fits.
+        </p>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- Reality capture background -->
+  <section class="py-12 md:py-16 border-t border-gray-200 dark:border-gray-800">
+    <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+      <div>
+        <VideoEmbed
+          src="/assets/Sabine_ruemmele_3DGS.mp4"
+          caption="3D Gaussian Splatting, rendered in real time"
+        />
+      </div>
+      <div class="max-w-measure">
+        <p class="eyebrow mb-3">Background</p>
+        <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-50 mb-4 leading-snug">
+          3D computer vision at SICK
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 mb-4">
+          From 2023 to 2025 I worked with Gaussian Splatting, NeRF, photogrammetry and learned
+          3D reconstruction. Even then, the starting point was a problem, usually a customer's,
+          and the question was whether one of these methods could solve it.
+        </p>
+        <p class="text-gray-600 dark:text-gray-400">
+          The scene in the video was reconstructed with Gaussian Splatting in under two minutes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</PageLayout>

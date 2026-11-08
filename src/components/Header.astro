@@ -1,0 +1,155 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+import { SITE_CONFIG, NAV_LINKS } from '../config';
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 bg-paper/90 dark:bg-paper-dark/90 backdrop-blur border-b border-gray-200 dark:border-gray-800">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
+    <!-- Logo / site title -->
+    <a
+      href="/"
+      class="font-semibold text-lg tracking-tight text-gray-900 dark:text-gray-50 hover:text-brand-700 dark:hover:text-brand-300 shrink-0"
+    >
+      {SITE_CONFIG.siteTitle}
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="hidden md:flex items-center gap-1" aria-label="Main navigation">
+      {NAV_LINKS.map(({ href, label }) => (
+        <a
+          href={href}
+          class:list={[
+            'px-3 py-1.5 rounded-md text-sm font-medium transition-colors',
+            currentPath.startsWith(href)
+              ? 'bg-brand-50 text-brand-800 dark:bg-brand-950 dark:text-brand-200'
+              : 'text-gray-700 hover:text-brand-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-brand-300 dark:hover:bg-gray-800',
+          ]}
+          aria-current={currentPath.startsWith(href) ? 'page' : undefined}
+        >
+          {label}
+        </a>
+      ))}
+    </nav>
+
+    <!-- Social icons + theme toggle -->
+    <div class="flex items-center gap-1">
+      <!-- Social links (desktop only) -->
+      <div class="hidden md:flex items-center gap-1">
+        <a
+          href={`mailto:${SITE_CONFIG.email}`}
+          aria-label="Email"
+          class="p-2 rounded-lg text-gray-500 hover:text-brand-700 dark:text-gray-400 dark:hover:text-brand-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a
+          href={`https://github.com/${SITE_CONFIG.github}`}
+          aria-label="GitHub"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="p-2 rounded-lg text-gray-500 hover:text-brand-700 dark:text-gray-400 dark:hover:text-brand-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
+        <a
+          href={`https://www.linkedin.com/in/${SITE_CONFIG.linkedin}`}
+          aria-label="LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="p-2 rounded-lg text-gray-500 hover:text-brand-700 dark:text-gray-400 dark:hover:text-brand-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+      <ThemeToggle />
+      <!-- Hamburger button (mobile) -->
+      <button
+        id="hamburger"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        class="md:hidden p-2 rounded-lg text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+      >
+        <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div
+    id="mobile-menu"
+    role="dialog"
+    aria-label="Navigation menu"
+    class="md:hidden hidden border-t border-gray-200 dark:border-gray-800 bg-paper dark:bg-paper-dark"
+  >
+    <nav class="max-w-5xl mx-auto px-4 py-4 flex flex-col gap-1" aria-label="Mobile navigation">
+      {NAV_LINKS.map(({ href, label }) => (
+        <a
+          href={href}
+          data-nav-link
+          class:list={[
+            'px-3 py-2.5 rounded-md text-sm font-medium transition-colors',
+            currentPath.startsWith(href)
+              ? 'bg-brand-50 text-brand-800 dark:bg-brand-950 dark:text-brand-200'
+              : 'text-gray-700 hover:text-brand-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-brand-300 dark:hover:bg-gray-800',
+          ]}
+          aria-current={currentPath.startsWith(href) ? 'page' : undefined}
+        >
+          {label}
+        </a>
+      ))}
+      <!-- Social links in mobile menu -->
+      <div class="flex items-center gap-3 px-3 pt-3 mt-1 border-t border-gray-100 dark:border-gray-800">
+        <a href={`mailto:${SITE_CONFIG.email}`} aria-label="Email" class="text-gray-500 hover:text-brand-700 dark:text-gray-400 dark:hover:text-brand-300 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a href={`https://github.com/${SITE_CONFIG.github}`} target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-gray-500 hover:text-brand-700 dark:text-gray-400 dark:hover:text-brand-300 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
+        <a href={`https://www.linkedin.com/in/${SITE_CONFIG.linkedin}`} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-gray-500 hover:text-brand-700 dark:text-gray-400 dark:hover:text-brand-300 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // T033/T034: Mobile hamburger menu — toggle open/close
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  function openMenu() {
+    mobileMenu?.classList.remove('hidden');
+    hamburger?.setAttribute('aria-expanded', 'true');
+    hamburgerIcon?.classList.add('hidden');
+    closeIcon?.classList.remove('hidden');
+  }
+
+  function closeMenu() {
+    mobileMenu?.classList.add('hidden');
+    hamburger?.setAttribute('aria-expanded', 'false');
+    hamburgerIcon?.classList.remove('hidden');
+    closeIcon?.classList.add('hidden');
+  }
+
+  hamburger?.addEventListener('click', () => {
+    const isOpen = hamburger.getAttribute('aria-expanded') === 'true';
+    isOpen ? closeMenu() : openMenu();
+  });
+
+  // Close menu when a nav link is tapped
+  document.querySelectorAll('[data-nav-link]').forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close menu on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+</script>
