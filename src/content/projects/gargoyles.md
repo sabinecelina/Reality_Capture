@@ -10,7 +10,7 @@ This project focused on the **digital preservation of medieval gargoyle sculptur
 
 As part of a multidisciplinary team, I was responsible for the **complete digital capture and cleanup of the gargoyle statues** using *Agisoft Metashape* and *Blender*. The goal was to bring these cultural artifacts into an **accessible and engaging form** for younger audiences and museum visitors.
 
-<a class="btn btn-primary" rel="noopener noreferrer" href="https://oneof300.github.io/Gargoyles-Tower-Defense-v2/Build/index.html" target="_blank">→ Play the game</a>
+<a class="btn btn-primary" rel="noopener noreferrer" href="https://sabinecelina.github.io/tower-defense/" target="_blank">→ Play the game</a>
 
 ---
 
