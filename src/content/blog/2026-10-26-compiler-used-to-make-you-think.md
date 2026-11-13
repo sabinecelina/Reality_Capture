@@ -50,11 +50,10 @@ reminder.<span class="fn">set</span>("check 2h");</code></pre></div>
 <div class="kt-sys two"><b>System 2</b><i>Slow, deliberate, effortful</i><p>Works out 17 × 24 step by step.</p><p>Decides what to build, and how.</p></div>
 </div>
 <p>Programming has always moved between the two. You decide in System 2, type in System 1, and go back to System 2 for the next decision. The first timeline below shows that rhythm. The second shows what happens to it with AI.</p>
-<!-- TODO Sabine: Die Grafiken basieren auf einer fremden Idee. Quelle raussuchen und in der figcaption nennen. -->
 <figure class="kt-figure"><div class="kt-scroll">
 <img src="/assets/2026-10-26/coding-manual.svg" alt="Timeline of manual coding. We alternate between thinking and fixing in System 2 and coding in System 1. The AI lane is empty.">
 <img src="/assets/2026-10-26/coding-with-ai.svg" alt="Timeline of coding with AI. We prompt and judge the result as looking good in System 1. The AI does the coding, the thinking and the fixing. The System 2 lane is empty.">
-</div><figcaption>A sketch of how the time is spent, not a measurement.</figcaption></figure>
+</div><figcaption>A sketch of how the time is spent, not a measurement. The timeline format is borrowed from Chris Loy’s <a href="https://chrisloy.dev/post/2025/09/28/the-ai-coding-trap">The AI coding trap</a>. The System 1 and System 2 lanes are my addition.</figcaption></figure>
 <p>The part that matters here is a detail of how the switch happens. Kahneman calls System 2 lazy. It follows the law of least effort and mostly accepts what System 1 suggests. It only takes over when something goes wrong, when System 1 runs into a surprise it cannot handle.</p>
 <p>A compiler error is exactly such a surprise. So is a failing test, or a function you have to name and can’t, because you don’t yet know what it does. We usually describe these as friction. I now think they were also doing a job: they kept pulling us back into System 2 whether we felt like it or not. Thinking was built into the work as a side effect.</p>
 
